@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;-webkit-tap-highlight-color:rgba(0,0,0,0);}article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }body{line-height:1;}ol,ul,li{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
+
+html { background: #fff; }
+body { font: 12px Verdana, Tahoma, "Microsoft Yahei", SimSun;*font-family:"Microsoft Yahei"; color: #666; }
+h1, h2, h3, h4, h5, h6, i, em { line-height: 1em; color: #666; font-weight: normal; }
+input,button,select,textarea{ outline:none}
+a { 
+  text-decoration: none;
+  color: #666;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+}
+a:hover {
+  text-decoration: underline;
+  color: #d93600;
+}
+strong { font-weight: bold; }
+
+
+.clearfix { zoom: 1; }
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.hidden{ display:none;}
+.show{ display:block;}
+.pr { position: relative; }
+.pa { position: absolute; }
+.tc { text-align: center; }
+.fl,.pull-left { float: left; }
+.fr,.pull-right { float: right; }
+.verm { vertical-align:middle;}
+.nober{ border:0 !important;}
+
+
+.pt5 { padding-top: 5px; }
+.pt10 { padding-top: 10px; }
+.pt15 { padding-top: 15px; }
+.pt20 { padding-top: 20px; }
+.mt10 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt15 { margin-top: 15px; }
+.mt20 { margin-top: 20px; }
+.mr0 { margin-right: 0; }
+.mb0 { margin-bottom: 0; }
+.mb10 { margin-bottom: 10px; }
+.mb20 { margin-bottom: 20px; }
+

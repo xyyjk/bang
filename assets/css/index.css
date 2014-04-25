@@ -1,0 +1,16 @@
+/* CSS Document */
+.warp{ margin:0 auto; width:1200px;}
+
+/* ==========================
+ * 			家装服务
+ * ==========================*/
+.g_service{ margin-bottom:25px; }
+.g_service .leftbox{ float:left; width:895px; margin-right:25px;}
+.g_service .rightbox{ float:left; width:280px; }
+.g_service .m_title{ font-size:18px; height:38px;line-height:38px; color:#c7000a;}
+.g_service .leftbox .container{ padding:19px; border:1px solid #ccc;}
+.g_service .rightbox .container{ padding:19px; border:1px solid #ccc;}
+/* ==========================
+ * 			底部广告
+ * ==========================*/
+.bot_ad img { border:1px solid #ccc;}
