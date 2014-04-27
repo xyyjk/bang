@@ -10,9 +10,6 @@
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/public.css?v=1.0.140424">
 <link rel="stylesheet" href="assets/css/index.css">
-<!--[if lt IE 9]>
-	<script src="assets/js/respond.src.js"></script>
-<![endif]-->
 <script src="assets/js/jquery.js?v=1.0.140424"></script>
 <script src="assets/js/jquery.masonry.js?v=1.0.140424"></script>
 <script src="assets/js/common.js?v=1.0.140424"></script>
@@ -20,59 +17,6 @@
 <script src="assets/js/jquery.SuperSlide.2.1.js?v=1.0.140427"></script>
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
 <link rel="shortcut icon" href="assets/ico/favicon.png">
-<script type="text/javascript">
-$(function(){
-	//首页左侧分类菜单
-	$(".category ul.menu").find("li").each(
-		function() {
-			$(this).hover(
-				function() {
-				  var cat_id = $(this).attr("cat_id");
-					var menu = $(this).find("div[cat_menu_id='"+cat_id+"']");
-					menu.show();
-					$(this).addClass("hover");
-					if(menu.attr("hover")>0) return;
-					menu.masonry({itemSelector: 'dl'});
-					var menu_height = menu.height();
-					if (menu_height < 60) menu.height(80);
-					menu_height = menu.height();
-					var li_top = $(this).position().top;
-					if ((li_top > 60) && (menu_height >= li_top)) $(menu).css("top",-li_top+50);
-					if ((li_top > 150) && (menu_height >= li_top)) $(menu).css("top",-li_top+90);
-					if ((li_top > 240) && (li_top > menu_height)) $(menu).css("top",menu_height-li_top+90);
-					if (li_top > 300 && (li_top > menu_height)) $(menu).css("top",60-menu_height);
-					if ((li_top > 40) && (menu_height <= 120)) $(menu).css("top",-5);
-					menu.attr("hover",1);
-				},
-				function() {
-					$(this).removeClass("hover");
-				    var cat_id = $(this).attr("cat_id");
-					$(this).find("div[cat_menu_id='"+cat_id+"']").hide();
-				}
-			);
-		}
-	);
-	$(".head-user-menu dl").hover(function() {
-		$(this).addClass("hover");
-	},
-	function() {
-		$(this).removeClass("hover");
-	});
-	$('.head-user-menu .my-mall').mouseover(function(){// 最近浏览的商品
-		//load_history_information();
-		$(this).unbind('mouseover');
-	});
-	$('.head-user-menu .my-cart').mouseover(function(){// 运行加载购物车
-		//load_cart_information();
-		$(this).unbind('mouseover');
-	});
-	$('#button').click(function(){
-	    if ($('#keyword').val() == '') {
-		    return false;
-	    }
-	});
-});
-</script>
 </head>
 <body>
 <!-- PublicTopLayout Begin -->
@@ -136,17 +80,6 @@ $(function(){
     </div>
   </div>
 </div>
-<script type="text/javascript">
-$(function(){
-	$(".quick-menu dl").hover(function() {
-		$(this).addClass("hover");
-	},
-	function() {
-		$(this).removeClass("hover");
-	});
-
-});
-</script>
 <!-- PublicHeadLayout Begin -->
 <div class="header-wrap">
   <div class="public-head-layout wrapper">
@@ -738,7 +671,6 @@ $(function(){
 <!--[if IE 6]>
 <script type="text/javascript" src="assets/js/ie6.js" charset="utf-8"></script>
 <![endif]-->
-
 <div class="site-main">
   <div class="wrapper">
     <!-- HomeFocusLayout Begin-->
@@ -1034,7 +966,7 @@ $(function(){
         <li>
           <dl>
             <dt class="goods-name">迈凯伦12C 2013款 3.8T SPIDER 北京现车 15日内手续全齐提车 黄色 3.6T</dt>
-            <dd class="goods-thumb"><a href="#"> <img src="http://www.shopnctest.com/b2b2c/2014/demo/data/upload/shop/store/goods/1/1_04425058327749561_240.jpg"></a></dd>
+            <dd class="goods-thumb"><a href="#"> <img src="assets/pic/index/240_240_6.jpg"></a></dd>
             <dd class="goods-price">300.00万 <span class="original">380.00万</span></dd>
             <dd class="goods-price-discount"><em>7.9折</em></dd>
             <dd class="time-remain" count_down="19366744"><i></i><em time_id="d">0</em>天<em time_id="h">0</em>小时 <em time_id="m">0</em>分<em time_id="s">0</em>秒 </dd>
@@ -1044,7 +976,7 @@ $(function(){
         <li>
           <dl>
             <dt class="goods-name">迈凯伦12C 2013款 3.8T SPIDER 北京现车 15日内手续全齐提车 黄色 3.8T</dt>
-            <dd class="goods-thumb"><a href="#"> <img src="http://www.shopnctest.com/b2b2c/2014/demo/data/upload/shop/store/goods/1/1_04425058327749561_240.jpg"></a></dd>
+            <dd class="goods-thumb"><a href="#"> <img src="assets/pic/index/240_240_6.jpg"></a></dd>
             <dd class="goods-price">300.00万 <span class="original">380.00万</span></dd>
             <dd class="goods-price-discount"><em>7.9折</em></dd>
             <dd class="time-remain" count_down="19366744"><i></i><em time_id="d">0</em>天<em time_id="h">0</em>小时 <em time_id="m">0</em>分<em time_id="s">0</em>秒 </dd>
@@ -1054,7 +986,7 @@ $(function(){
         <li>
           <dl>
             <dt class="goods-name">迈凯伦12C 2013款 3.8T SPIDER 北京现车 15日内手续全齐提车 桔色 3.6T</dt>
-            <dd class="goods-thumb"><a href="#"> <img src="http://www.shopnctest.com/b2b2c/2014/demo/data/upload/shop/store/goods/1/1_04425058460098027_240.jpg"></a></dd>
+            <dd class="goods-thumb"><a href="#"> <img src="assets/pic/index/240_240_7.jpg"></a></dd>
             <dd class="goods-price">300.00万 <span class="original">380.00万</span></dd>
             <dd class="goods-price-discount"><em>7.9折</em></dd>
             <dd class="time-remain" count_down="19366744"><i></i><em time_id="d">0</em>天<em time_id="h">0</em>小时 <em time_id="m">0</em>分<em time_id="s">0</em>秒 </dd>
@@ -1064,7 +996,7 @@ $(function(){
         <li>
           <dl>
             <dt class="goods-name">迈凯伦12C 2013款 3.8T SPIDER 北京现车 15日内手续全齐提车 桔色 3.8T</dt>
-            <dd class="goods-thumb"><a href="#"> <img src="http://www.shopnctest.com/b2b2c/2014/demo/data/upload/shop/store/goods/1/1_04425058460098027_240.jpg"></a></dd>
+            <dd class="goods-thumb"><a href="#"> <img src="assets/pic/index/240_240_7.jpg"></a></dd>
             <dd class="goods-price">300.00万 <span class="original">380.00万</span></dd>
             <dd class="goods-price-discount"><em>7.9折</em></dd>
             <dd class="time-remain" count_down="19366744"><i></i><em time_id="d">0</em>天<em time_id="h">0</em>小时 <em time_id="m">0</em>分<em time_id="s">0</em>秒 </dd>
@@ -1814,31 +1746,5 @@ $(function(){
     <p><a href="#" target="_blank" rel="nofollow">鲁ICP证000007</a><a href="#" target="_blank" rel="nofollow">鲁ICP备1000099-1号</a><a href="#" target="_blank" rel="nofollow">鲁公网安备110000000016号</a></p>
   </div>
 </div>
-<script type="text/javascript">
-function takeCount() {
-  setTimeout("takeCount()", 1000);
-  $(".time-remain").each(function() {
-    var obj = $(this);
-    var tms = obj.attr("count_down");
-    if (tms > 0) {
-      tms = parseInt(tms) - 1;
-      var days = Math.floor(tms / (1 * 60 * 60 * 24));
-      var hours = Math.floor(tms / (1 * 60 * 60)) % 24;
-      var minutes = Math.floor(tms / (1 * 60)) % 60;
-      var seconds = Math.floor(tms / 1) % 60;
-      if (days < 0) days = 0;
-      if (hours < 0) hours = 0;
-      if (minutes < 0) minutes = 0;
-      if (seconds < 0) seconds = 0;
-      obj.find("[time_id='d']").html(days);
-      obj.find("[time_id='h']").html(hours);
-      obj.find("[time_id='m']").html(minutes);
-      obj.find("[time_id='s']").html(seconds);
-      obj.attr("count_down", tms);
-    }
-  });
-}
-setTimeout("takeCount()", 1000);
-</script>
 </body>
 </html>

@@ -18,6 +18,8 @@ $(function(){
   
   //限时折扣
   $(".sale-discount").slide({mainCell:"ul",effect:"leftLoop",trigger:"click"});
+  //倒计时
+  setTimeout("takeCount()", 1000);
   
   //首页 N格 修复宽度bug
   $(".g_lazy .focus").slide({ mainCell:".bd ul",titCell:".hd ul",effect:"fold",autoPlay:true,delayTime:200,autoPage:"<li>$</li>" });
