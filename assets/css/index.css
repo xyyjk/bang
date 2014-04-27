@@ -50,8 +50,57 @@ img:hover{ opacity:.9;}
 .g_service .rightbox .photo .athen i{ position:relative; top:2px; padding-left:5px;}
 .g_service .rightbox .info{ float:left; width:122px;}
 .g_service .rightbox .info p{ color:#545454; line-height:20px; padding-bottom:12px;}
-.g_service .rightbox .info .f_pink{}
 /* ==========================
+ * 			     产品N格
+ * ==========================*/
+.lattice { padding-top:10px; margin-bottom:20px; overflow:hidden;}
+.lattice_box { width:1230px;}
+.lattice .items { float:left; width:132px; margin-right:20px;}
+.lattice .items h3 { padding-bottom:6px; padding-left:4px; font-size:16px; color:#545454; }
+.lattice .items dl { padding:10px 10px 0 10px; width:110px; border:1px solid #dedede; border-top:2px solid #c7000a; }
+.lattice .items dd { margin-bottom:10px;}
+.lattice .items dl a{ position:relative; display:block; width:110px; height:110px; overflow:hidden;}
+.lattice .items dl a span{ position:absolute; bottom: 0; left: 0; padding:0 5px; width: 100px; height: 32px; line-height:32px; text-align:center; background: url(../images/index/bak.5.png) repeat; color:#fff;overflow: hidden; white-space:nowrap; text-overflow:ellipsis;}
+/* ==========================
+ * 			     楼层模块
+ * ==========================*/
+.g_lazy { margin-bottom:20px;}
+.g_lazy .title{ height:40px;}
+.g_lazy .title h2{ float:left; padding-top:15px; padding-left:50px; font-size:18px; color:#666; height:20px; background:url(../images/index/ico_lou.png) no-repeat;}
+.g_lazy .hd_1f { border-bottom:3px solid #ef8620; }
+.g_lazy .hd_2f { border-bottom:3px solid #008cc7; }
+.g_lazy .hd_3f { border-bottom:3px solid #12cb9d; }
+.g_lazy .hd_1f .ico_lou { background-position: 0 9px;}
+.g_lazy .hd_2f .ico_lou { background-position: 0 -52px;}
+.g_lazy .hd_3f .ico_lou { background-position: 0 -113px;}
+.g_lazy .title ul{ float:right; padding-top:16px;}
+.g_lazy .title ul li { float:left;}
+.g_lazy .title ul li a{ font-size:14px; height:16px; line-height:16px; overflow:hidden; padding:0 12px; border-right:1px solid #666;}
+.g_lazy .title ul li a.more{ border-right:0; color:#dd4411;}
+.g_lazy .ct .leftbox { float:left; width:250px; padding-right:20px;}
+.g_lazy .ct .leftbox .focus{ width:250px; height:430px; position:relative; overflow:hidden; }
+.g_lazy .ct .leftbox .focus .hd { position:absolute; right:9px; bottom:10px; z-index:1; padding-left:2px; }
+.g_lazy .ct .leftbox .focus .hd li { color:#f60; cursor:pointer; margin-left:2px; width:20px; height:20px; float:left; font-size:16px; line-height:20px; overflow:visible; text-align:center;  color:#fff; }
+.g_lazy .ct .leftbox .focus .hd li.on { background:#f60; color:#fff; z-index:2; position:relative; }
+.g_lazy .ct .leftbox .hot_tag { padding:20px 10px; }
+.g_lazy .ct .leftbox .hot_tag h4{ font-size:14px; font-weight:bold; padding-bottom:10px;}
+.g_lazy .ct .leftbox .hot_tag li{ display:inline-block; line-height:30px; padding-right:12px; zoom:1;*display:inline;}
+.g_lazy .ct .rightbox{ float:left; width:930px; overflow:hidden;}
+.g_lazy .ct .rightbox dl{ width:960px; padding-top:10px;}
+.g_lazy .ct .rightbox dd{ width: 218px; float:left; margin-right:20px; margin-bottom:25px;}
+.g_lazy .ct .rightbox dd .pic{ display:block; width:218px; height:218px;  overflow:hidden;}
+.g_lazy .ct .rightbox dd .pic img { vertical-align:top; }
+.g_lazy .ct .rightbox dd .tit{ height:30px; line-height:30px; width:218px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.g_lazy .ct .rightbox dd .price { height:20px; line-height:20px;}
+.g_lazy .ct .rightbox dd .new_price{ padding-right:20px; color:#cc0000; font-size:14px;}
+.g_lazy .ct .rightbox dd .old_price{ color:#999; text-decoration:line-through;}
+.g_lazy .hot_num { padding-bottom:5px; border-bottom:1px solid #eee}
+.g_lazy .hot_num h2{ float:left; width:86px; height:36px; line-height:36px; font-size:14px; font-weight:bold; text-align:center;}
+.g_lazy .hot_num ul{ float:left; pa}
+.g_lazy .hot_num li{ float:left; margin-left:10px;}
+.g_lazy .hot_num li img{ border:1px solid #efefef;}
+.g_lazy .hot_num .more_t{ float:right; width:86px; line-height:36px; font-size:14px; text-align:center;}
+/* ========================
  * 			底部广告
  * ==========================*/
 .bot_ad img { border: 1px solid #ccc; }
