@@ -1,6 +1,14 @@
 // JavaScript Document
-$(function(){
-	
-	//首页 家装服务 下焦点图
-	$(".foucs_pic_box").slide({ mainCell:".pic",titCell:".hd",effect:"fold", autoPlay:false, delayTime:600, trigger:"click",autoPage:"<li></li>"});
-});
+
+//加入收藏
+function addFavorite(url, title) {
+  try {
+    window.external.addFavorite(url, title);
+  } catch (e){
+    try {
+      window.sidebar.addPanel(title, url, '');
+          } catch (e) {
+      alert("请按 Ctrl+D 键添加到收藏夹", 'notice');
+    }
+  }
+}

@@ -4,14 +4,13 @@
  * 			页面初始化
  * ==========================*/
 * html, * html body { background-image: url(/uiscc/css/about:blank); background-attachment: fixed; }
-.warp { margin: 0 auto; width: 1200px; }
 .leftbox { float: left; width: 150px; padding-bottom: 1px; }
 .rightbox { float: left; width: 1050px; }
 /* ==========================
  * 			悬浮导航
  * ==========================*/
 .group_main { margin-top: 10px; }
-.nav_menu { padding-bottom: 25px; width: 130px; background: url(../images/nav_menu_bg.png) no-repeat center bottom; }
+.nav_menu { padding-bottom: 25px; width: 130px; background: url(../images/groupbuy/nav_menu_bg.png) no-repeat center bottom; }
 .nav_menu dl { padding: 10px 1px 3px 1px; width: 128px; background: #dd4411; }
 .nav_menu dl dd { height: 30px; line-height: 30px; background: #FFF; border-bottom: 1px dotted #ccc; color: #dd4411; }
 .nav_menu dl dd i { padding: 0 8px; color: #dd4411; }
@@ -24,11 +23,11 @@
 .focus_pic { margin-bottom: 10px; }
 .focus_pic img { vertical-align: top; }
 .focus_pic .left_pic { position: relative; float: left; width: 770px; height: 310px; padding-right: 10px; }
-.focus_pic .left_pic h3 { position: absolute; bottom: 0; left: 0; width: 770px; height: 30px; line-height: 30px; text-indent: 30px; background: url(../images/bak.5.png) repeat; color: #fff; }
+.focus_pic .left_pic h3 { position: absolute; bottom: 0; left: 0; width: 770px; height: 30px; line-height: 30px; text-indent: 30px; background: url(../images/groupbuy/bak.5.png) repeat; color: #fff; }
 .focus_pic .right_pic { float: left; }
 .focus_pic .right_pic .topbox { position: relative; width: 270px; height: 160px; margin-bottom: 10px; }
 .focus_pic .right_pic .botbox { position: relative; width: 270px; height: 140px; }
-.focus_pic .right_pic .topbox h3, .focus_pic .right_pic .botbox h3 { position: absolute; bottom: 0; left: 0; width: 270px; height: 30px; line-height: 30px; text-indent: 30px; background: url(../images/bak.5.png) repeat; color: #fff; }
+.focus_pic .right_pic .topbox h3, .focus_pic .right_pic .botbox h3 { position: absolute; bottom: 0; left: 0; width: 270px; height: 30px; line-height: 30px; text-indent: 30px; background: url(../images/groupbuy/bak.5.png) repeat; color: #fff; }
 .focus_pic a:hover img { opacity: .9; }
 /* ==========================
  * 	   团购首页产品展示模块
@@ -38,8 +37,8 @@
 .g_product .m_hd dl { float: right; height:40px; overflow:hidden;}
 .g_product .m_hd dl dd { float: left; padding: 13px 8px; }
 .g_product .m_hd dl dd a { vertical-align: middle; }
-.g_product .m_hd dl dd i.up { display: inline-block; padding-left: 3px; width: 12px; height: 12px; background: url(../images/upjt.png) no-repeat 5px 1px; vertical-align: middle; *zoom:1; *display:inline;}
-.g_product .m_hd dl dd i.down { display: inline-block; padding-left: 3px; width: 12px; height: 12px; background: url(../images/upjt.png) no-repeat -7px 1px; vertical-align: middle; *zoom:1: *display:inline;}
+.g_product .m_hd dl dd i.up { display: inline-block; padding-left: 3px; width: 12px; height: 12px; background: url(../images/groupbuy/upjt.png) no-repeat 5px 1px; vertical-align: middle; *zoom:1; *display:inline;}
+.g_product .m_hd dl dd i.down { display: inline-block; padding-left: 3px; width: 12px; height: 12px; background: url(../images/groupbuy/upjt.png) no-repeat -7px 1px; vertical-align: middle; *zoom:1: *display:inline;}
 .g_product .m_hd dd i { *position:relative; *top:-1px; _top: 2px; }
 .g_product .m_bd { width: 1050px; overflow:hidden;}
 .g_product .m_bd dl { width: 1065px;}
