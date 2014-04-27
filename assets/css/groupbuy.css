@@ -9,7 +9,7 @@
 /* ==========================
  * 			悬浮导航
  * ==========================*/
-.group_main { margin-top: 10px; }
+.group_main { margin-top: 10px; margin-bottom:20px; }
 .nav_menu { padding-bottom: 25px; width: 130px; background: url(../images/groupbuy/nav_menu_bg.png) no-repeat center bottom; }
 .nav_menu dl { padding: 10px 1px 3px 1px; width: 128px; background: #dd4411; }
 .nav_menu dl dd { height: 30px; line-height: 30px; background: #FFF; border-bottom: 1px dotted #ccc; color: #dd4411; }
