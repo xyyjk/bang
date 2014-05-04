@@ -5,7 +5,7 @@ $(function(){
   
   //焦点下多图滚动加载
   $(".picScroll").hover(function(){$(this).find(".prev,.next").stop(true,true).fadeTo("show",0.3)},function(){$(this).find(".prev,.next").fadeOut()});
-  $(".picScroll").slide({ mainCell:"ul", effect:"leftLoop", vis:3, scroll:2, autoPage:true, switchLoad:"_src" });
+  $(".picScroll").slide({ mainCell:"ul", effect:"leftLoop", vis:3, scroll:2,autoPlay:true,interTime:4000,delayTime:600, autoPage:true, switchLoad:"_src" });
   
   //焦点右侧公告
   /* 详简切换通过添加on类名和css控制 */
@@ -29,5 +29,5 @@ $(function(){
   $(".lattice .items:first-child").css('marginRight','22px');
   
 	//首页 家装服务 下焦点图
-  $(".foucs_pic_box").slide({ mainCell:".pic",titCell:".hd",effect:"fold", autoPlay:false, delayTime:600, trigger:"click",autoPage:"<li></li>"});
+  $(".foucs_pic_box").slide({ mainCell:".pic",titCell:".hd",effect:"fold",autoPlay:true,interTime:4000,delayTime:600, autoPlay:true, delayTime:600, trigger:"click",autoPage:"<li></li>"});
 });

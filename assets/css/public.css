@@ -131,7 +131,7 @@
 .public-nav-layout .all-category:hover .category { display:block;}
 .public-nav-layout .category .menu { background-color: #FFF;}
 .public-nav-layout .category .menu li { background-color: #FAFAFA; width: 210px; height: 59px; *float: left; *clear: left; border-top: solid 1px #FFF; position: relative; z-index: 1; zoom:1;}
-.public-nav-layout .category .menu li .cate{ position:absolute; top: 10px; left:-18px; width:18px; background:url(../images/global/cage.gif) no-repeat 0 0; height:44px; padding-top:6px; text-align:center; color:#fff;}
+.public-nav-layout .category .menu li .cate{ position:absolute; top: 10px; left:-18px; width:18px; background:url(../images/global/cage.gif) no-repeat 0 0; height:44px; line-height: 14px; padding-top:6px; text-align:center; color:#fff;}
 .public-nav-layout .category .menu li.odd { background-color: #FAFAFA;}
 .public-nav-layout .category .menu li.even { background-color: #F0F0F0;}
 .public-nav-layout .category .menu li.hover { z-index: 2;}

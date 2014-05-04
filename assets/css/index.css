@@ -6,8 +6,8 @@
 .public-nav-layout .category .cat_chat{height: 50px;background: #fff;text-align: center;}
 .public-nav-layout .category .cat_chat a{ display:block;}
 .public-nav-layout .category .cat_chat img{padding-top: 10px;}
-.focus_layout{}
-.focus_layout .pull_left{margin-left: 212px; border-bottom:solid 1px #eee;}
+.focus_layout{ display:inline-block; *display:inline; *zoom:1;}
+.focus_layout .pull_left{margin-left: 212px;_margin-left:103px; border-bottom:solid 1px #eee;}
 .focus_layout .pull_right{width:210px; border-bottom:solid 1px #eee; border-right:solid 1px #eee; border-left:solid 1px #eee;}
 /* 顶部banner */
 .focus_layout .banner_box{ width:776px; height:400px; overflow:hidden; position:relative; }
