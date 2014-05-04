@@ -16,6 +16,7 @@
   height:12px;
   margin-right: 4px;
   background:url(../images/global/top_bg.png) no-repeat -46px 0;
+  _background:url(../images/global/top_bg.png) no-repeat -46px 2px;
 }
 .public-top-layout .user-entry .seller-login { margin-left:20px; }
 .public-top-layout .user-entry .seller-login .ico{
@@ -26,13 +27,14 @@
   height:12px;
   margin-right: 4px;
   background:url(../images/global/top_bg.png) no-repeat -10px 0;
+  _background:url(../images/global/top_bg.png) no-repeat -10px 3px;
 }
-.public-top-layout .quick-menu { font-size: 0; *word-spacing:-1px/*IE6、7*/; text-align: right; width: 400px; height: 30px; float: right;}
+.public-top-layout .quick-menu { font-size: 0; *word-spacing:-1px/*IE6、7*/; text-align: right; width: 430px; height: 30px; float: right;}
 .public-top-layout .quick-menu a { color: #777 !important;}
 .public-top-layout .quick-menu dl { text-align: left; vertical-align: top; letter-spacing: normal; word-spacing: normal; display: inline-block; *display:inline/*IE6、7*/; width: 80px; height: 30px; position: relative; z-index: 999; *zoom:1/*IE6、7*/;}
-.public-top-layout .quick-menu dl dt { font-size: 12px; line-height: 20px; height: 20px; padding: 5px 0; position: absolute; z-index: 2; top: 0px; left: 12px;}
+.public-top-layout .quick-menu dl dt { font-size: 12px; line-height: 20px; height: 20px; padding: 5px 0; _padding-top:6px; position: absolute; z-index: 2; top: 0px; left: 12px;}
 .public-top-layout .quick-menu dl dt a:hover { text-decoration: none; color: #F30;}
-.public-top-layout .quick-menu dl dt i { background: url(../images/global/top_bg.png) no-repeat 0 0; vertical-align: middle; display: inline-block; width: 6px; height: 3px; margin-left: 6px;-webkit-transition: .2s ease-in; -moz-transition: -webkit-transform .2s ease-in; -o-transition: -webkit-transform .2s ease-in; transition: .2s ease-in;}
+.public-top-layout .quick-menu dl dt i { background: url(../images/global/top_bg.png) no-repeat 0 0; _background: url(../images/global/top_bg.png) no-repeat 0 8px; vertical-align: middle; display: inline-block; width: 6px; height: 3px; margin-left: 6px;-webkit-transition: .2s ease-in; -moz-transition: -webkit-transform .2s ease-in; -o-transition: -webkit-transform .2s ease-in; transition: .2s ease-in;}
 .public-top-layout .quick-menu dl.hover dt i { FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); -moz-transform: rotate(180deg); -moz-transform-origin: 50% 30%; -webkit-transform: rotate(180deg); -webkit-transform-origin: 50% 30%; -o-transform: rotate(180deg); -o-transform-origin: 50% 30%; transform: rotate(180deg); transform-origin: 50% 30%;}
 .public-top-layout .quick-menu dl dd { background-color: #FFF; display: none; width: 78px; border: solid 1px #F0F0F0; position: absolute; z-index: 1; top: 0; left: 0;}
 .public-top-layout .quick-menu dl.hover dd { display: block;}
@@ -49,8 +51,8 @@
 /* 头部搜索 */
 .head-search-bar { width: 500px; float: left; margin: 17px 0 0; overflow: hidden;}
 .head-search-bar .search-form { background-color: #cc0101; height: 36px; padding: 3px;}
-.head-search-bar .input-text { line-height: 24px; color: #555; width: 80%; height: 24px; float: left; padding: 6px 2%; border: none 0;}
-.head-search-bar .input-submit { font-size: 14px; color: #FFF; font-weight: 600; background-color: transparent; width: 15%; height: 40px; float: right; border: none; cursor: pointer;}
+.head-search-bar .input-text { line-height: 24px; color: #555; width: 80%; _width:390px; height: 24px; float: left; padding: 6px 2%; border: none 0;}
+.head-search-bar .input-submit { font-size: 14px; color: #FFF; font-weight: 600; background-color: transparent; width: 15%; height: 36px; float: right; border: none; cursor: pointer;}
 .head-search-bar .keyword { line-height: 20px; color: #999; width: 500px; height: 20px; margin-top: 4px; overflow: hidden;}
 .head-search-bar .keyword ul { font-size: 0; *word-spacing:-1px/*IE6、7*/; vertical-align: top; display: inline-block; *display:inline/*IE6、7*/;}
 .head-search-bar .keyword ul li { font-size: 12px; vertical-align: top; letter-spacing: normal; word-spacing: normal; display: inline-block; *display:inline/*IE6、7*/; margin-right: 12px;}
@@ -59,7 +61,7 @@
 .head-user-menu { font-size: 0; *word-spacing:-1px/*IE6、7*/; float: right; margin: 18px 0 0 0; }
 .head-user-menu dl { font-size: 12px; vertical-align: top; letter-spacing: normal; word-spacing: normal; display: inline-block; *display:inline/*IE6、7*/; margin-right: 10px; position: relative; z-index: 3; *zoom:1/*IE6、7*/;}
 .head-user-menu dl.my-mall { width: 108px;}
-.head-user-menu dl.my-cart { width: 124px; }
+.head-user-menu dl.my-cart { width: 124px; *height: 42px; margin-right: 0; }
 .head-user-menu dl.hover { z-index: 101;}
 .head-user-menu dl dt { line-height: 20px; color: #555; background-color: #FAFAFA; height: 20px; padding: 10px; border: solid 1px #F0F0F0; position: absolute; z-index: 2; top: 0; right: 0; cursor: pointer;}
 .head-user-menu dl.my-mall dt { width: 90px;}
@@ -75,7 +77,7 @@
 .head-user-menu dl.my-cart dd { width: 348px;}
 .head-user-menu dl.hover dd { display: block;}
 .head-user-menu dl dd a { color: #005EA6;}
-.head-user-menu a.arrow i { background:url(../images/global/top_bg.png) no-repeat -150px 0; vertical-align: middle; display: inline-block; width: 4px; height: 7px; margin-left: 4px;}
+.head-user-menu a.arrow i { background:url(../images/global/top_bg.png) no-repeat -150px 0; _background:url(../images/global/top_bg.png) no-repeat -150px 7px; vertical-align: middle; display: inline-block; width: 4px; height: 7px; margin-left: 4px;}
 .head-user-menu dl dd .goods-thumb { width: 50px; height: 50px;}
 .head-user-menu dl dd .goods-thumb a { line-height: 0; text-align: center; vertical-align: middle; display: table-cell; *display: block; width: 48px; height: 48px; border: solid 1px #DDD; overflow: hidden; }
 .head-user-menu dl dd .goods-thumb img { max-width: 48px; max-height: 48px; margin-top:expression(48-this.height/2); *margin-top:expression(24-this.height/2);}
@@ -86,8 +88,8 @@
 .head-user-menu dl dd .user-centent-menu ul { width: 310px; margin-left: -2px;}
 .head-user-menu dl dd .user-centent-menu ul li { width: 138px; float: left; padding: 4px 0 4px 16px; border-left: solid 1px #EEE; }
 .head-user-menu dl dd .browse-history { background-color: #FAFAFA; width: 308px; border-style: solid; border-width: 1px 0 0; border-color: #DDD transparent transparent;}
-.head-user-menu dl dd .browse-history .part-title { height: 20px; padding: 6px 8px; }
-.head-user-menu dl dd .browse-history .part-title h4 { float: left;}
+.head-user-menu dl dd .browse-history .part-title { height: 20px; line-height:20px; padding: 0 8px; margin:8px 0 6px 0; }
+.head-user-menu dl dd .browse-history .part-title h4 { float: left; height:18px; line-height:18px; }
 .head-user-menu dl dd .browse-history .part-title a { float: right;}
 .head-user-menu dl dd .browse-history ul { font-size: 0; *word-spacing:-1px/*IE6、7*/; padding: 0 7px 7px 7px;}
 .head-user-menu dl dd .browse-history ul li { vertical-align: top; letter-spacing: normal; word-spacing: normal; display: inline-block; *display:inline/*IE6、7*/; margin: 0 4px; *zoom: 1;}
@@ -100,7 +102,7 @@
 .head-user-menu dl dd .incart-goods dt, .head-user-menu dl dd .incart-goods dd { background-color: transparent; border: 0; position: absolute; z-index: 1; }
 .head-user-menu dl dd .incart-goods dt.goods-name { line-height: 16px; background-color: transparent; text-align: left; width: 180px; height: 32px; padding: 0; top: 8px; left: 64px; }
 .head-user-menu dl dd .incart-goods dt.goods-name a { color: #333;}
-.head-user-menu dl dd .incart-goods dd.goods-thumb { top: 8px; left: 8px;}
+.head-user-menu dl dd .incart-goods dd.goods-thumb { top: 8px; left: 8px; _left:-145px;}
 .head-user-menu dl dd .incart-goods dd.goods-price { text-align: right; width: 80px; height: 16px; top: 6px; right: 12px;}
 .head-user-menu dl dd .incart-goods dd.goods-price em { font-size: 11px !important; font-weight: normal!important; line-height: 16px; color: #777 !important; word-break: break-all; word-wrap: break-word; text-overflow: ellipsis; white-space: nowrap; text-align: right; width: 50px; margin-right: 4px; overflow: hidden; -webkit-text-size-adjust:none;}
 .head-user-menu dl dd .incart-goods dd.goods-sales { line-height: 16px; color: #999; background-color: transparent; width: 270px; height: 16px; top: 42px; left: 64px; }
@@ -127,7 +129,7 @@
 .public-nav-layout .all-category .title h3 {line-height: 20px;}
 .public-nav-layout .all-category .title h3 a { font-weight: 600; color: #FFF; float: left; margin-left: 4px;}
 .public-nav-layout .all-category .title i { font-size: 0px; line-height: 0; width: 0px; height: 0px; float: right; margin: 8px 4px 0 0; border-width: 5px; border-color: #FFF transparent transparent transparent; border-style: solid dashed dashed dashed;}
-.public-nav-layout .all-category .category { position:absolute; display:none; filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#19000000', endColorstr='#19000000'); background:rgba(0,0,0,0.1); width: 210px; padding: 0 1px 1px; margin-left: -1px;}
+.public-nav-layout .all-category .category { _position:absolute; display:none; filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#19000000', endColorstr='#19000000'); background:rgba(0,0,0,0.1); width: 210px; padding: 0 1px 1px;margin-left: -1px; _margin-left: -3px;}
 .public-nav-layout .all-category:hover .category { display:block;}
 .public-nav-layout .category .menu { background-color: #FFF;}
 .public-nav-layout .category .menu li { background-color: #FAFAFA; width: 210px; height: 59px; *float: left; *clear: left; border-top: solid 1px #FFF; position: relative; z-index: 1; zoom:1;}
@@ -186,6 +188,7 @@
   float: left ;
   padding: 8px 0;
   margin: 0 15px;
+  _margin: 0 0 0 15px;
   border-bottom: dotted 1px #ccc;
 }
 .public-nav-layout .category .sub-class dl dt {
