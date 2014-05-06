@@ -1,0 +1,1023 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<title>棒棒 - slogan</title>
+<meta name="keywords" content=" ">
+<meta name="description" content=" ">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/public.css?v=1.0.140424">
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/list.css">
+<script src="assets/js/jquery.js?v=1.0.140424"></script>
+<script src="assets/js/jquery.masonry.js?v=1.0.140424"></script>
+<script src="assets/js/common.js?v=1.0.140424"></script>
+<script src="assets/js/index.js?v=1.0.140427"></script>
+<script src="assets/js/list.js"></script>
+<script src="assets/js/jquery.SuperSlide.2.1.js?v=1.0.140427"></script>
+</head>
+<body>
+<!-- PublicTopLayout Begin -->
+<div class="public-top-layout full">
+  <div class="topbar wrapper">
+    <div class="user-entry"> <span class="favorite fl"><a href="javascript:;" onClick="addFavorite(window.location,document.title)"><i class="ico"></i>收藏帮帮网</a></span> <span class="seller-login fl"><a href="#"><i class="ico"></i>商家管理中心</a></span>
+      <div class="fr">您好，欢迎来到棒棒网！<span>[<a href="#">登录</a>]</span><span>[<a href="#">免费注册</a>]</span></div>
+    </div>
+    <div class="quick-menu">
+      <dl>
+        <dt><a href="#">我的订单</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="#">待付款订单</a></li>
+            <li><a href="#">待确认收货</a></li>
+            <li><a href="#">待评价交易</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="#">我的收藏</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="#">商品收藏</a></li>
+            <li><a href="#">店铺收藏</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>手机棒棒<i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="#">link name</a></li>
+            <li><a href="#">link name</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>客户服务<i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="#">帮助中心</a></li>
+            <li><a href="#">售后服务</a></li>
+            <li><a href="#">客服中心</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>站点导航<i></i></dt>
+        <dd>
+          <ul>
+            <li><a target="_blank" href="#">商城首页</a></li>
+            <li><a target="_blank" href="#">资讯频道</a></li>
+            <li><a target="_blank" href="#">圈子社区</a></li>
+            <li><a target="_blank" href="#">微 商 城</a></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<!-- PublicHeadLayout Begin -->
+<div class="header-wrap">
+  <div class="public-head-layout wrapper">
+    <h1 class="site-logo"><a href="index.html"><img src="assets/images/global/logo.png" class="pngFix"></a></h1>
+    <div class="head-search-bar">
+      <form action="#" method="get" class="search-form">
+        <input name="act" id="search_act" value="search" type="hidden">
+        <input name="keyword" id="keyword" type="text" class="input-text" value="" maxlength="60" x-webkit-speech lang="zh-CN" onwebkitspeechchange="foo()" placeholder="请输入您要搜索的商品关键字" x-webkit-grammar="builtin:search" />
+        <input type="submit" id="button" value="搜索" class="input-submit">
+      </form>
+      <div class="keyword">热门搜索：
+        <ul>
+          <li><a href="#">PVC墙纸</a></li>
+          <li><a href="#">LED光源</a></li>
+          <li><a href="#"> 实木地板</a></li>
+          <li><a href="#">整体橱柜</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="head-user-menu">
+      <dl class="my-mall">
+        <dt><span class="ico"></span>我的商城<i class="arrow"></i></dt>
+        <dd>
+          <div class="sub-title">
+            <h4></h4>
+            <a href="#" class="arrow">我的用户中心<i></i></a></div>
+          <div class="user-centent-menu">
+            <ul>
+              <li><a href="#">站内消息(<span>0</span>)</a></li>
+              <li><a href="#" class="arrow">我的订单<i></i></a></li>
+              <li><a href="#">咨询回复(<span id="member_consult">0</span>)</a></li>
+              <li><a href="#" class="arrow">我的收藏<i></i></a></li>
+              <li><a href="#">代金券(<span id="member_voucher">0</span>)</a></li>
+              <li><a href="#" class="arrow">我的积分<i></i></a></li>
+            </ul>
+          </div>
+          <div class="browse-history">
+            <div class="part-title">
+              <h4>最近浏览的商品</h4>
+            </div>
+            <!-- loading状态
+            <ul>
+              <li class="no-goods"><img class="loading" src="assets/images/global/loading.gif" /></li>
+            </ul> --> 
+            <!-- 无商品状态
+            <ul><li class="no-goods">暂无商品</li></ul> --> 
+            <!-- 商品列表 -->
+            <ul>
+              <li class="goods-thumb"><a href="#" title="维多利亚的秘密 新款内裤 斑马条纹性感底裤" target="_blank"><img src="assets/pic/index/60_60_1.jpg" alt="维多利亚的秘密 新款内裤 斑马条纹性感底裤"></a></li>
+              <li class="goods-thumb"><a href="#" title="专业跑步机垫 加厚减震垫 防滑抗震 2cm缓冲垫 隔音垫 耐用" target="_blank"><img src="assets/pic/index/60_60_2.jpg" alt="专业跑步机垫 加厚减震垫 防滑抗震 2cm缓冲垫 隔音垫 耐用"></a></li>
+              <li class="goods-thumb"><a href="#" title="韩式减肥瘦腰瘦身加重加长正品软弹簧呼拉圈特价按摩软呼啦圈" target="_blank"><img src="assets/pic/index/60_60_3.jpg" alt="韩式减肥瘦腰瘦身加重加长正品软弹簧呼拉圈特价按摩软呼啦圈"></a></li>
+              <li class="goods-thumb"><a href="#" title="翡翠正品a货天然飘黄翡手玩 淡紫如意鸿运当头古龙手玩" target="_blank"><img src="assets/pic/index/60_60_4.jpg" alt="翡翠正品a货天然飘黄翡手玩 淡紫如意鸿运当头古龙手玩"></a></li>
+              <li class="goods-thumb"><a href="#" title="BH 必艾奇 tecnovita YV82 企鹅踏步机 台湾制造进口 YV82 企鹅踏步机+原装拉绳" target="_blank"><img src="assets/pic/index/60_60_5.jpg" alt="BH 必艾奇 tecnovita YV82 企鹅踏步机 台湾制造进口 YV82 企鹅踏步机+原装拉绳"></a></li>
+            </ul>
+          </div>
+        </dd>
+      </dl>
+      <dl class="my-cart">
+        <dt><span class="ico"></span>购物车结算<i class="arrow"></i></dt>
+        <dd>
+          <div class="sub-title">
+            <h4>最新加入的商品</h4>
+          </div>
+          <div class="incart-goods-box">
+            <div class="incart-goods"> 
+              <!-- loading状态
+            <img class="loading" src="assets/images/global/loading.gif" /> --> 
+              <!-- 无商品状态
+            <div class="no-order"><span>您的购物车中暂无商品，赶快选择心爱的商品吧！</span></div> --> 
+              <!-- 商品列表 -->
+              <dl id="cart_item_320">
+                <dt class="goods-name"><a href="#">Hello/哈奴 男冬装男士休闲纯色加绒打底衫扣子领长袖T恤保暖秋衣 黑色 XL</a></dt>
+                <dd class="goods-thumb"><a href="#" title="Hello/哈奴 男冬装男士休闲纯色加绒打底衫扣子领长袖T恤保暖秋衣 黑色 XL"><img src="assets/pic/index/60_60_2.jpg"></a></dd>
+                <dd class="goods-sales"></dd>
+                <dd class="goods-price"><em>¥69.00×1</em></dd>
+                <dd class="handle"><em><a href="javascript:void(0);" onClick="drop_topcart_item(320,320);">删除</a></em></dd>
+              </dl>
+              <dl id="cart_item_175">
+                <dt class="goods-name"><em><a href="#">BH 必艾奇 tecnovita YV82 企鹅踏步机 台湾制造进口 YV82 企鹅踏步机+原装拉绳</a></em></dt>
+                <dd class="goods-thumb"><em><a href="#" title="BH 必艾奇 tecnovita YV82 企鹅踏步机 台湾制造进口 YV82 企鹅踏步机+原装拉绳"><img src="assets/pic/index/60_60_3.jpg"></a></em></dd>
+                <dd class="goods-sales"></dd>
+                <dd class="goods-price"><em><em>¥790.00×1</em></em></dd>
+                <dd class="handle"><em><em><a href="javascript:void(0);" onClick="drop_topcart_item(175,175);">删除</a></em></em></dd>
+              </dl>
+            </div>
+          </div>
+          <div class="checkout"> <span class="total-price">共<i>2</i>种商品&nbsp;&nbsp;总计金额：<em>¥859.00</em></span><a href="#" class="btn-cart">结算购物车中的商品</a> </div>
+        </dd>
+        <div class="addcart-goods-num">2</div>
+      </dl>
+    </div>
+  </div>
+</div>
+<!-- PublicHeadLayout End --> 
+<!-- publicNavLayout Begin -->
+<div class="public-nav-layout">
+  <div class="wrapper">
+    <div class="all-category">
+      <div class="title">
+        <h3><a href="#">全部商品分类</a></h3>
+        <i class="arrow"></i> </div>
+      <div class="category" style="display:none !important;">
+        <ul class="menu">
+          <li class="odd" >
+            <div class="cate">建材</div>
+            <div class="class"><span class="ico"><img src="assets/images/global/category-pic-1.jpg"></span>
+              <h4><a href="#">水电暖材料</a></h4>
+              <span class="recommend-class"> <a href="#" title="管道配件">管道配件</a> <a href="#" title="阀门">阀门</a> <a href="#" title="龙头">龙头</a></span><span class="arrow"></span> </div>
+            <div class="sub-class">
+              <div class="pull_left">
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+              </div>
+              <div class="pull_right">
+                <div class="box">
+                  <h4><a href="#">灯饰照明品牌</a></h4>
+                  <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+              </div>
+            </div>
+          </li>
+          <li class="even" >
+            <div class="class"><span class="ico"><img src="assets/images/global/category-pic-2.jpg"></span>
+              <h4><a href="#">基础装饰材料</a></h4>
+              <span class="recommend-class"> <a href="#" title="管道配件">管道配件</a> <a href="#" title="阀门">阀门</a> <a href="#" title="龙头">龙头</a></span><span class="arrow"></span> </div>
+            <div class="sub-class">
+              <div class="pull_left">
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+              </div>
+              <div class="pull_right">
+                <div class="box">
+                  <h4><a href="#">灯饰照明品牌</a></h4>
+                  <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+              </div>
+            </div>
+          </li>
+          <li class="odd" >
+            <div class="class"> <span class="ico"><img src="assets/images/global/category-pic-3.jpg"></span>
+              <h4><a href="#">定制加工</a></h4>
+              <span class="recommend-class"> <a href="#" title="家具">家具</a> <a href="#" title="橱柜">橱柜</a> <a href="#" title="衣帽柜">衣帽柜</a> <a href="#" title="柜门">柜门</a></span><span class="arrow"></span> </div>
+            <div class="sub-class">
+              <div class="pull_left">
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+              </div>
+              <div class="pull_right">
+                <div class="box">
+                  <h4><a href="#">灯饰照明品牌</a></h4>
+                  <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+              </div>
+            </div>
+          </li>
+          <li cat_id="256" class="even" >
+            <div class="class"> <span class="ico"><img src="assets/images/global/category-pic-4.jpg"></span>
+              <h4><a href="#">墙地面材料</a></h4>
+              <span class="recommend-class"> <a href="#" title="乳胶漆">乳胶漆</a> <a href="#" title="复合地板">复合地板</a> <a href="#" title="地砖">地砖</a></span><span class="arrow"></span> </div>
+            <div class="sub-class" cat_menu_id="256">
+              <div class="pull_left">
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+              </div>
+              <div class="pull_right">
+                <div class="box">
+                  <h4><a href="#">灯饰照明品牌</a></h4>
+                  <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+              </div>
+            </div>
+          </li>
+          <li cat_id="308" class="odd" >
+            <div class="cate">建材</div>
+            <div class="class"> <span class="ico"><img src="assets/images/global/category-pic-5.jpg"></span>
+              <h4><a href="#">门窗</a></h4>
+              <span class="recommend-class"> <a href="#" title="实木复合门">实木复合门</a> <a href="#" title="实木门">实木门</a> <a href="#" title="平开窗">平开窗</a></span><span class="arrow"></span> </div>
+            <div class="sub-class" cat_menu_id="308">
+              <div class="pull_left">
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+              </div>
+              <div class="pull_right">
+                <div class="box">
+                  <h4><a href="#">灯饰照明品牌</a></h4>
+                  <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+              </div>
+            </div>
+          </li>
+          <li cat_id="470" class="even" >
+            <div class="class"> <span class="ico"><img src="assets/images/global/category-pic-6.jpg"></span>
+              <h4><a href="#">厨房卫浴</a></h4>
+              <span class="recommend-class"> <a href="#" title="实木橱柜">实木橱柜</a> <a href="#" title="浴缸">浴缸</a> <a href="#" title="马桶">马桶</a> <a href="#" title="台上盆">台上盆</a></span><span class="arrow"></span> </div>
+            <div class="sub-class" cat_menu_id="470">
+              <div class="pull_left">
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+              </div>
+              <div class="pull_right">
+                <div class="box">
+                  <h4><a href="#">灯饰照明品牌</a></h4>
+                  <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+              </div>
+            </div>
+          </li>
+          <li cat_id="662" class="odd" >
+            <div class="class"> <span class="ico"><img src="assets/images/global/category-pic-7.jpg"></span>
+              <h4><a href="#">灯具</a></h4>
+              <span class="recommend-class"> <a href="#" title="吸顶灯">吸顶灯</a> <a href="#" title="吊灯">吊灯</a> <a href="#" title="白炽灯">白炽灯</a></span><span class="arrow"></span> </div>
+            <div class="sub-class" cat_menu_id="662">
+              <div class="pull_left">
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+              </div>
+              <div class="pull_right">
+                <div class="box">
+                  <h4><a href="#">灯饰照明品牌</a></h4>
+                  <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+              </div>
+            </div>
+          </li>
+          <li cat_id="593" class="even" >
+            <div class="cate">建材</div>
+            <div class="class"> <span class="ico"><img src="assets/images/global/category-pic-8.jpg"></span>
+              <h4><a href="#">住宅家具</a></h4>
+              <span class="recommend-class"> <a href="#" title="实木床">实木床</a> <a href="#" title="真皮沙发">真皮沙发</a> <a href="#" title="实木餐桌 ">实木餐桌</a></span><span class="arrow"></span> </div>
+            <div class="sub-class" cat_menu_id="593">
+              <div class="pull_left">
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+              </div>
+              <div class="pull_right">
+                <div class="box">
+                  <h4><a href="#">灯饰照明品牌</a></h4>
+                  <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+              </div>
+            </div>
+          </li>
+          <li cat_id="3" class="odd">
+            <div class="class"> <span class="ico"><img src="assets/images/global/category-pic-8.jpg"></span>
+              <h4><a href="#">商业办公家具</a></h4>
+              <span class="recommend-class"> <a href="#" title="办公桌">办公桌</a> <a href="#" title="办公椅">办公椅</a> <a href="#" title="沙发">沙发</a> <a href="#" title="茶几">茶几</a></span><span class="arrow"></span> </div>
+            <div class="sub-class" cat_menu_id="3">
+              <div class="pull_left">
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+              </div>
+              <div class="pull_right">
+                <div class="box">
+                  <h4><a href="#">灯饰照明品牌</a></h4>
+                  <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+              </div>
+            </div>
+          </li>
+          <li cat_id="730" class="even">
+            <div class="cate">建材</div>
+            <div class="class"> <span class="ico"><img src="assets/images/global/category-pic-10.jpg"></span>
+              <h4><a href="#">家居馆</a></h4>
+              <span class="recommend-class"> <a href="#" title="四件套">四件套</a> <a href="#" title="婚庆床品">婚庆床品</a> <a href="#" title="床单/被套">床单/被套</a></span><span class="arrow"></span> </div>
+            <div class="sub-class" cat_menu_id="730">
+              <div class="pull_left">
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">水管件</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">上、下水管道</a> <a href="#">管道配件</a> <a href="#">阀门/龙头</a> <a href="#">水暖工具</a> <a href="#">防水材料</a> <a href="#">PPR管材管件</a> <a href="#">PVC管材管件</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">冷暖系统</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">中央空调/空调</a> <a href="#">地暖采暖系统</a> <a href="#">太阳能</a> <a href="#">散热片</a> <a href="#">锅炉</a> <a href="#">壁炉</a> <a href="#">保温材料</a></dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <h3><a href="#">电工电料</a></h3>
+                  </dt>
+                  <dd class="goods-class"> <a href="#">电线/数据线/拖线板</a> <a href="#">开关/插座</a> <a href="#">线管/暗合</a> <a href="#">配电箱/断路器</a> <a href="#">电料配件/电工工具</a> <a href="#">门铃</a> <a href="#">LED灯</a> <a href="#">光伏电池</a></dd>
+                </dl>
+              </div>
+              <div class="pull_right">
+                <div class="box">
+                  <h4><a href="#">灯饰照明品牌</a></h4>
+                  <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="cat_chat"><a href="#"><img src="assets/images/index/cat_chat.gif" width="176" height="28" alt=""/></a></div>
+      </div>
+    </div>
+    <ul class="site-menu">
+      <li><a href="index.html" class="current">首页</a></li>
+      <li><a href="#">棒棒团购</a></li>
+      <li><a href="#">品牌中心</a></li>
+      <li><a href="#">积分中心</a></li>
+      <li><a target="_blank" href="#">棒棒圈子</a></li>
+      <li><a target="_blank" href="#">活动专场</a></li>
+    </ul>
+  </div>
+</div>
+<!-- PublicNavLayout End--> 
+<!--[if IE 6]>
+<script type="text/javascript" src="assets/js/ie6.js" charset="utf-8"></script>
+<![endif]-->
+<div class="list-main">
+  <div class="wrapper clearfix">
+    <div class="crumb"> <span class="ico_home">首页</span><i>&gt;</i><a href="#">基础装饰材料</a> </div>
+    <!-- 侧栏 -->
+    <div class="sidebar">
+      <div class="sortlist" id="sortlist">
+        <div class="mc">
+          <div class="item current">
+            <h3><b></b>灯饰照明</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>厨房卫浴</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>五金工具</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>电工电料</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>墙地面材料</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>装饰材料</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>装修服务</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list_container">
+      <div class="select m" id="select">
+        <div class="mt">
+          <h1>壁纸<strong>&nbsp;-&nbsp;商品筛选</strong></h1>
+        </div>
+        <div class="mc attrs">
+          <div class="brand-attr">
+            <div class="attr">
+              <div class="a-key">品牌：</div>
+              <div class="a-values">
+                <div class="v-option" id="voption"><span class="o-more suck_down"><b></b>更多</span><span class="o-more suck_up fold hide"><b></b>收起</span></div>
+                <div class="v-tabs">
+                  <ul class="tab hide">
+                    <li class="curr" rel="0">所有品牌<b></b></li>
+                    <li rel="a">A<b></b></li>
+                    <li rel="b">B<b></b></li>
+                    <li rel="c">C<b></b></li>
+                    <li rel="d">D<b></b></li>
+                    <li rel="e">E<b></b></li>
+                    <li rel="f">F<b></b></li>
+                    <li rel="g">G<b></b></li>
+                    <li rel="h">H<b></b></li>
+                    <li rel="i">I<b></b></li>
+                    <li rel="j">J<b></b></li>
+                    <li rel="k">K<b></b></li>
+                    <li rel="l">L<b></b></li>
+                    <li rel="m">M<b></b></li>
+                    <li rel="n">N<b></b></li>
+                    <li rel="o">O<b></b></li>
+                    <li rel="p">P<b></b></li>
+                    <li rel="q">Q<b></b></li>
+                    <li rel="r">R<b></b></li>
+                    <li rel="s">S<b></b></li>
+                    <li rel="t">T<b></b></li>
+                    <li rel="u">U<b></b></li>
+                    <li rel="v">V<b></b></li>
+                    <li rel="w">W<b></b></li>
+                    <li rel="x">X<b></b></li>
+                    <li rel="y">Y<b></b></li>
+                    <li rel="z">Z<b></b></li>
+                    <li rel="other">其它<b></b></li>
+                  </ul>
+                  <div class="tabcon undefined">
+                    <div style="display: block;" brand="less" rel="q"><a href="#">旗航壁纸</a></div>
+                    <div style="display: block;" brand="less" rel="c"><a href="#">超萌象</a></div>
+                    <div style="display: block;" brand="less" rel="g"><a href="#">格林威尔</a></div>
+                    <div style="display: block;" brand="less" rel="z"><a href="#">纸尚美学</a></div>
+                    <div style="display: block;" brand="less" rel="s"><a href="#">塞拉维（CESELAVIE）</a></div>
+                    <div style="display: block;" brand="less" rel="m"><a href="#">玛尚家饰</a></div>
+                    <div style="display: block;" brand="less" rel="h"><a href="#">海宝先生（hbsir）</a></div>
+                    <div style="display: block;" brand="less" rel="s"><a href="#">斯图</a></div>
+                    <div style="display: block;" brand="less" rel="a"><a href="#">艾亿</a></div>
+                    <div style="display: block;" brand="less" rel="h"><a href="#">荷尖尖</a></div>
+                    <div style="display: block;" brand="less" rel="l"><a href="#">洛可可</a></div>
+                    <div style="display: block;" brand="less" rel="y"><a href="#">玉兰壁纸</a></div>
+                    <div style="display: block;" brand="less" rel="d"><a href="#">多美正</a></div>
+                    <div style="display: block;" brand="less" rel="b"><a href="#">博典</a></div>
+                    <div style="display: block;" brand="less" rel="m"><a href="#">米素</a></div>
+                    <div style="display: none;" brand="more" rel="l"><a href="#">靓雅壁纸（your home）</a></div>
+                    <div style="display: none;" brand="more" rel="b"><a href="#">布雷克壁纸（PRAGE）</a></div>
+                    <div style="display: none;" brand="more" rel="a"><a href="#">爱我品</a></div>
+                    <div style="display: none;" brand="more" rel="w"><a href="#">唯基</a></div>
+                    <div style="display: none;" brand="more" rel="l"><a href="#">乐嘉</a></div>
+                    <div style="display: none;" brand="more" rel="j"><a href="#">居梦坞（Dreamwall）</a></div>
+                    <div style="display: none;" brand="more" rel="z"><a href="#">纸秀壁纸</a></div>
+                    <div style="display: none;" brand="more" rel="y"><a href="#">莹臻</a></div>
+                    <div style="display: none;" brand="more" rel="q"><a href="#">蔷艺工坊</a></div>
+                    <div style="display: none;" brand="more" rel="d"><a href="#">德瑞（DE）</a></div>
+                    <div style="display: none;" brand="more" rel="d"><a href="#">迪沃斯（Dwalls）</a></div>
+                    <div style="display: none;" brand="more" rel="a"><a href="#">阿尔法</a></div>
+                    <div style="display: none;" brand="more" rel="y"><a href="#">玉兰</a></div>
+                    <div style="display: none;" brand="more" rel="m"><a href="#">木臣</a></div>
+                    <div style="display: none;" brand="more" rel="w"><a href="#">WOMA</a></div>
+                    <div style="display: none;" brand="more" rel="d"><a href="#">德诺</a></div>
+                    <div style="display: none;" brand="more" rel="m"><a href="#">沐然壁纸</a></div>
+                    <div style="display: none;" brand="more" rel="r"><a href="#">瑞宝（rainbow）</a></div>
+                    <div style="display: none;" brand="more" rel="s"><a href="#">山月（SANGETSU）</a></div>
+                    <div style="display: none;" brand="more" rel="h"><a href="#">还原.爱</a></div>
+                    <div style="display: none;" brand="more" rel="d"><a href="#">黛狄尔斯（De Dears）</a></div>
+                    <div style="display: none;" brand="more" rel="y"><a href="#">意诺壁纸</a></div>
+                    <div style="display: none;" brand="more" rel="m"><a href="#">美乐乐家居</a></div>
+                    <div style="display: none;" brand="more" rel="r"><a href="#">瑞金俪（RAY-KINGLY）</a></div>
+                    <div style="display: none;" brand="more" rel="j"><a href="#">嘉力丰（GAREFU）</a></div>
+                    <div style="display: none;" brand="more" rel="c"><a href="#">CEO</a></div>
+                    <div style="display: none;" brand="more" rel="g"><a href="#">格莱美</a></div>
+                    <div style="display: none;" brand="more" rel="d"><a hhref="#">帝轩</a></div>
+                    <div style="display: none;" brand="more" rel="q"><a href="#">其它</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prop-attrs ">
+            <div class="attr">
+              <div class="a-key">类别：</div>
+              <div class="a-values">
+                <div class="v-fold">
+                  <ul class="f-list">
+                    <li><a href="#">无纺布墙纸</a></li>
+                    <li><a href="#">PVC墙纸</a></li>
+                    <li><a href="#">纯纸墙纸</a></li>
+                    <li><a href="#">植绒墙纸</a></li>
+                    <li><a href="#">壁纸胶</a></li>
+                    <li><a href="#">其它</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prop-attrs ">
+            <div class="attr">
+              <div class="a-key">风格：</div>
+              <div class="a-values">
+                <div class="v-fold">
+                  <ul class="f-list">
+                    <li><a href="#">欧式</a></li>
+                    <li><a href="#">简约现代</a></li>
+                    <li><a href="#">田园</a></li>
+                    <li><a href="#">其它</a></li>
+                    <li><a href="#">美式</a></li>
+                    <li><a href="#">儿童</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prop-attrs ">
+            <div class="attr">
+              <div class="a-key">价格：</div>
+              <div class="a-values">
+                <div class="v-fold">
+                  <ul class="f-list">
+                    <li><a href="#">1-199</a></li>
+                    <li><a href="#">200-499</a></li>
+                    <li><a href="#">500-899</a></li>
+                    <li><a href="#">900以上</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div overfour="true" class="prop-attrs hide" style="display: none;">
+            <div class="attr">
+              <div class="a-key">材质：</div>
+              <div class="a-values">
+                <div class="v-fold">
+                  <ul class="f-list">
+                    <li><a href="#">无纺布墙纸</a></li>
+                    <li><a href="#">PVC墙纸</a></li>
+                    <li><a href="#">纯纸墙纸</a></li>
+                    <li><a href="#">植绒墙纸</a></li>
+                    <li><a href="#">墙贴</a></li>
+                    <li><a href="#">硅藻泥</a></li>
+                    <li><a href="#">壁画</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div overfour="true" class="prop-attrs hide" style="display: none;">
+            <div class="attr">
+              <div class="a-key">规格：</div>
+              <div class="a-values">
+                <div class="v-fold">
+                  <ul class="f-list">
+                    <li><a href="#">5.3㎡</a></li>
+                    <li><a href="#">7㎡</a></li>
+                    <li><a href="#">16.5㎡</a></li>
+                    <li><a href="#">其它</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb" id="moreProp" onclick="moreProp(this);" style="display: block;">
+          <div class="attr-extra">
+            <div>更多选项<b></b></div>
+          </div>
+        </div>
+        <div class="mb hide" id="lessProp" onclick="lessProp(this);" style="display: none;">
+          <div class="attr-extra open">
+            <div>收起<b></b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="ft_help">
+    <div class="wrapper">
+      <h1 class="ft_logo fl"><a href="index.html"><img src="assets/images/global/logo.gif" alt="棒棒"></a></h1>
+      <div class="ft_ls fl">
+        <dl>
+          <dt>购物指南</dt>
+          <dd><a href="#" title="免费注册">免费注册</a></dd>
+          <dd><a href="#" title="开通支付宝">开通支付宝</a></dd>
+          <dd><a href="#" title="支付宝支付">支付宝支付</a></dd>
+        </dl>
+        <dl>
+          <dt>保障</dt>
+          <dd><a href="#" title="发票保障">发票保障</a></dd>
+          <dd><a href="#" title="售后规则">售后规则</a></dd>
+          <dd><a href="#" title="缺货赔偿">缺货赔偿</a></dd>
+        </dl>
+        <dl>
+          <dt>支付方式</dt>
+          <dd><a href="#" title="支付宝快捷支付">支付宝快捷支付</a></dd>
+          <dd><a href="#" title="支付宝余额付款">支付宝余额付款</a></dd>
+          <dd><a href="#" title="支付宝钱包付款">支付宝钱包付款</a></dd>
+          <dd><a href="#" title="货到付款">货到付款</a></dd>
+          <dd><a href="#" title="新人支付">新人支付</a></dd>
+        </dl>
+        <dl>
+          <dt>商家服务</dt>
+          <dd><a href="#" title="商家入驻棒棒">商家入驻棒棒</a></dd>
+          <dd><a href="#" title="棒棒商家中心">棒棒商家中心</a></dd>
+          <dd><a href="#" title="棒棒智库">棒棒智库</a></dd>
+          <dd><a href="#" title="棒棒规则">棒棒规则</a></dd>
+          <dd><a href="#" title="物流服务">物流服务</a></dd>
+          <dd><a href="#" title="运营服务">运营服务</a></dd>
+        </dl>
+      </div>
+      <div class="ft_qr fr">
+        <dl>
+          <dt>手机棒棒</dt>
+          <dd><img src="assets/images/global/qr_code.gif" alt="手机棒棒"></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="ft_bottom wrapper tc">
+    <p><a href="#">首页</a>|<a href="#">招聘英才</a>|<a href="#">广告合作</a>|<a href="#">联系我们</a>|<a href="#">关于棒棒</a></p>
+    <p>&copy; 2014 BangBang 版权所有</p>
+    <p><a href="#" target="_blank" rel="nofollow">鲁ICP证000007</a><a href="#" target="_blank" rel="nofollow">鲁ICP备1000099-1号</a><a href="#" target="_blank" rel="nofollow">鲁公网安备110000000016号</a></p>
+  </div>
+</div>
+</body>
+</html>
