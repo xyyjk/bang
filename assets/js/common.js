@@ -99,5 +99,11 @@ $(function(){
       return false;
     }
   });
+  
+  /* 返回顶部 */
+  $("#go_top .g_7").click(function(){
+    $('body,html').animate({scrollTop:0},300);
+    return false;
+  });
 
 });

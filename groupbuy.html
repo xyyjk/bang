@@ -14,6 +14,7 @@
 <script src="assets/js/jquery.js?v=1.0.140424"></script>
 <script src="assets/js/jquery.masonry.js?v=1.0.140424"></script>
 <script src="assets/js/common.js?v=1.0.140424"></script>
+<script src="assets/js/jquery.SuperSlide.2.1.js?v=1.0.140506"></script>
 <script src="assets/js/groupbuy.js?v=1.0.140424"></script>
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
 <link rel="shortcut icon" href="assets/ico/favicon.png">
@@ -49,10 +50,10 @@
       </dl>
       <dl>
         <dt>手机棒棒<i></i></dt>
-        <dd>
+        <dd class="phone">
           <ul>
-            <li><a href="#">link name</a></li>
-            <li><a href="#">link name</a></li>
+            <li><span>手机棒棒</span><img src="assets/images/global/qr_wx.gif" width="86" height="86" alt="手机棒棒"/></li>
+            <li class="pt10"><span>棒棒微信</span><img src="assets/images/global/qr_wap.gif" width="86" height="86" alt="棒棒微信"/></li>
           </ul>
         </dd>
       </dl>
@@ -243,12 +244,12 @@
               </div>
             </div>
           </li>
-          <li cat_id="2" class="odd" >
+          <li class="odd" >
             <div class="class"> <span class="ico"><img src="assets/images/global/category-pic-3.jpg"></span>
               <h4><a href="#">定制加工</a></h4>
 
               <span class="recommend-class"> <a href="#" title="家具">家具</a> <a href="#" title="橱柜">橱柜</a> <a href="#" title="衣帽柜">衣帽柜</a> <a href="#" title="柜门">柜门</a></span><span class="arrow"></span> </div>
-            <div class="sub-class" cat_menu_id="2">
+            <div class="sub-class">
               <div class="pull_left">
                 <dl>
                   <dt>
@@ -671,7 +672,7 @@
 <script type="text/javascript" src="assets/js/ie6.js" charset="utf-8"></script>
 <![endif]-->
 <div class="group_main">
-  <div class="wrapper clearfix">
+  <div class="wrapper clearfix pr">
     <div class="leftbox">
       <div class="nav_menu">
         <dl>
@@ -691,191 +692,216 @@
     </div>
     <div class="rightbox">
     	<div class="focus_pic clearfix">
-        	<div class="left_pic">
-            	<a href="#" target="_blank"><img src="assets/pic/groupbuy/ct01.jpg" width="770" height="310" /></a>
-                <h3>伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计</h3>
-            </div>
-            <div class="right_pic">
-            	<div class="topbox">
-                	<a href="#" target="_blank"><img src="assets/pic/groupbuy/ct02.jpg" width="270" height="160" /></a>
-                	<h3>伦敦优雅精致的现代家居装修设计</h3>
+        <div class="left_pic">
+          <div class="foucs_pic_box">
+            <ul class="pic">
+              <li><a href="#" target="_blank"><img src="assets/pic/groupbuy/ct01.jpg"/></a>
+                <div class="title">
+                  <h3>伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计</h3>
                 </div>
-                <div class="botbox">
-                	<a href="#" target="_blank"><img src="assets/pic/groupbuy/ct03.jpg" width="270" height="140" /></a>
-                	<h3>伦敦优雅精致的现代家居装修设计</h3>
+              </li>
+              <li><a href="#" target="_blank"><img src="assets/pic/groupbuy/ct01.jpg"/></a>
+                <div class="title">
+                  <h3>伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计</h3>
                 </div>
-            </div>
+              </li>
+              <li><a href="#" target="_blank"><img src="assets/pic/groupbuy/ct01.jpg"/></a>
+                <div class="title">
+                  <h3>伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计</h3>
+                </div>
+              </li>
+            </ul>
+            <ul class="hd"></ul>
+          </div>
         </div>
-        <!-- 产品模块 -->
-        <div class="g_product">
-        	<div class="m_hd mb10">
-            	<h2>水电暖材料</h2>
-                <dl>
-                	<dd><a href="javascript:;">默认</a></dd>
-                    <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
-                    <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
-                </dl>
-            </div>
-            <div class="m_bd">
-            	<dl class="clearfix">
-                	<dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                    <dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                    <dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                  	<div style="clear:both;"></div>
-                </dl>
-            </div>
+        <div class="right_pic">
+          <div class="topbox">
+            <a href="#" target="_blank"><img src="assets/pic/groupbuy/ct02.jpg" width="270" height="160" /></a>
+            <h3>伦敦优雅精致的现代家居装修设计</h3>
+          </div>
+          <div class="botbox">
+            <a href="#" target="_blank"><img src="assets/pic/groupbuy/ct03.jpg" width="270" height="140" /></a>
+            <h3>伦敦优雅精致的现代家居装修设计</h3>
+          </div>
         </div>
-        <!-- 产品模块 -->
-        <div class="g_product">
-        	<div class="m_hd mb10">
-            	<h2>基础装饰材料</h2>
-                <dl>
-                	<dd><a href="javascript:;">默认</a></dd>
-                    <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
-                    <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
-                </dl>
-            </div>
-            <div class="m_bd">
-            	<dl>
-                	<dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                    <dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                    <dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-        <!-- 产品模块 -->
-        <div class="g_product">
-        	<div class="m_hd mb10">
-            	<h2>定制加工</h2>
-                <dl>
-                	<dd><a href="javascript:;">默认</a></dd>
-                    <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
-                    <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
-                </dl>
-            </div>
-            <div class="m_bd">
-            	<dl>
-                	<dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                    <dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                    <dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-        <!-- 产品模块 -->
-        <div class="g_product">
-        	<div class="m_hd mb10">
-            	<h2>墙地面材料</h2>
-                <dl>
-                	<dd><a href="javascript:;">默认</a></dd>
-                    <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
-                    <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
-                </dl>
-            </div>
-            <div class="m_bd">
-            	<dl>
-                	<dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                    <dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                    <dd>
-                    	<a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
-                        <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                        <div class="item_prices">
-                        	<div class="price"><span>￥</span>599</div>
-                            <div class="orig_price">￥1020</div>
-                            <div class="sold_num"><span>288</span>人想买</div>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
-        </div>
+      </div>
+      <!-- 产品模块 -->
+      <div class="g_product">
+        <div class="m_hd mb10">
+            <h2>水电暖材料</h2>
+              <dl>
+                <dd><a href="javascript:;">默认</a></dd>
+                  <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
+                  <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
+              </dl>
+          </div>
+          <div class="m_bd">
+            <dl class="clearfix">
+                <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+                  <div style="clear:both;"></div>
+              </dl>
+          </div>
+      </div>
+      <!-- 产品模块 -->
+      <div class="g_product">
+        <div class="m_hd mb10">
+            <h2>基础装饰材料</h2>
+              <dl>
+                <dd><a href="javascript:;">默认</a></dd>
+                  <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
+                  <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
+              </dl>
+          </div>
+          <div class="m_bd">
+            <dl>
+                <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+              </dl>
+          </div>
+      </div>
+      <!-- 产品模块 -->
+      <div class="g_product">
+        <div class="m_hd mb10">
+            <h2>定制加工</h2>
+              <dl>
+                <dd><a href="javascript:;">默认</a></dd>
+                  <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
+                  <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
+              </dl>
+          </div>
+          <div class="m_bd">
+            <dl>
+                <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+              </dl>
+          </div>
+      </div>
+      <!-- 产品模块 -->
+      <div class="g_product">
+        <div class="m_hd mb10">
+            <h2>墙地面材料</h2>
+              <dl>
+                <dd><a href="javascript:;">默认</a></dd>
+                  <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
+                  <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
+              </dl>
+          </div>
+          <div class="m_bd">
+            <dl>
+                <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
+                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
+                      <div class="item_prices">
+                        <div class="price"><span>￥</span>599</div>
+                          <div class="orig_price">￥1020</div>
+                          <div class="sold_num"><span>288</span>人想买</div>
+                      </div>
+                  </dd>
+              </dl>
+          </div>
+      </div>
     </div>
+    <div id="go_top">
+      <ul>
+        <li class="g_1"><a href="#" title="家装服务" target="_blank"><span>家装服务</span></a></li>
+        <li class="g_7"><a href="javascript:void(0)" title="返回顶部"><span>返回顶部</span></a></li>
+      </ul>
+    </div>
+    <!-- /go_top -->
   </div>
 </div>
 

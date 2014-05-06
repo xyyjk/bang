@@ -29,5 +29,5 @@ $(function(){
   $(".lattice .items:first-child").css('marginRight','22px');
   
   //首页 家装服务 下焦点图
-  $(".foucs_pic_box").slide({ mainCell:".pic",titCell:".hd",effect:"fold",autoPlay:true,interTime:4000,delayTime:600, autoPlay:true, delayTime:600, trigger:"click",autoPage:"<li></li>"});
+  $(".foucs_pic_box").slide({ mainCell:".pic",titCell:".hd",effect:"fold",autoPlay:true,interTime:4000,delayTime:600,trigger:"click",autoPage:"<li></li>"});
 });

@@ -37,6 +37,10 @@
 .public-top-layout .quick-menu dl dt i { background: url(../images/global/top_bg.png) no-repeat 0 0; _background: url(../images/global/top_bg.png) no-repeat 0 8px; vertical-align: middle; display: inline-block; width: 6px; height: 3px; margin-left: 6px;-webkit-transition: .2s ease-in; -moz-transition: -webkit-transform .2s ease-in; -o-transition: -webkit-transform .2s ease-in; transition: .2s ease-in;}
 .public-top-layout .quick-menu dl.hover dt i { FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); -moz-transform: rotate(180deg); -moz-transform-origin: 50% 30%; -webkit-transform: rotate(180deg); -webkit-transform-origin: 50% 30%; -o-transform: rotate(180deg); -o-transform-origin: 50% 30%; transform: rotate(180deg); transform-origin: 50% 30%;}
 .public-top-layout .quick-menu dl dd { background-color: #FFF; display: none; width: 78px; border: solid 1px #F0F0F0; position: absolute; z-index: 1; top: 0; left: 0;}
+.public-top-layout .quick-menu dl dd.phone { border-bottom: 0; }
+.public-top-layout .quick-menu dl dd.phone li { width: 100px; padding-left: 10px; background-color: #fff; border-right: solid 1px #f0f0f0; }
+.public-top-layout .quick-menu dl dd.phone span { display: block; height: 20px; width: 80px; font-size: 12px; line-height: 20px; font-weight: bold; padding-top: 6px; color: #CC0101; }
+.public-top-layout .quick-menu dl dd.phone .pt10{padding-bottom: 10px;}
 .public-top-layout .quick-menu dl.hover dd { display: block;}
 .public-top-layout .quick-menu dl dd ul { width: 78px; margin: 30px 0 0 0; }
 .public-top-layout .quick-menu dl dd ul li a { font-size: 12px; line-height: 24px; display: block; clear: both; padding: 2px 0 2px 11px;}
@@ -82,7 +86,7 @@
 .head-user-menu dl dd .goods-thumb a { line-height: 0; text-align: center; vertical-align: middle; display: table-cell; *display: block; width: 48px; height: 48px; border: solid 1px #DDD; overflow: hidden; }
 .head-user-menu dl dd .goods-thumb img { max-width: 48px; max-height: 48px; margin-top:expression(48-this.height/2); *margin-top:expression(24-this.height/2);}
 .head-user-menu dl dd .sub-title { line-height: 28px; height: 28px; padding: 7px; border-bottom: solid 1px #DDD;}
-.head-user-menu dl dd .sub-title h4 { font-weight: 600; float: left;}
+.head-user-menu dl dd .sub-title h4 { font-weight: 600; line-height:28px; float: left;}
 .head-user-menu dl dd .sub-title a { float: right;}
 .head-user-menu dl dd .user-centent-menu { width: 308px; padding: 8px 0; overflow: hidden;}
 .head-user-menu dl dd .user-centent-menu ul { width: 310px; margin-left: -2px;}
@@ -112,7 +116,7 @@
 .head-user-menu dl dd .checkout .total-price i { font-weight: 600; color: #C00; margin: 0 4px;}
 .head-user-menu dl dd .checkout .total-price em { font-family: Verdana, Geneva, sans-serif; font-size: 18px; font-weight: 600; color: #C00;}
 .head-user-menu dl dd .checkout .btn-cart { float: right; clear: both; line-height: 20px; color: #FFF; background-color: #D93600; padding: 4px 8px; margin-top: 4px; border-radius: 4px;}
-.head-user-menu dl div.addcart-goods-num { font: bold 11px/14px Verdana; color: #FFF; background: #F00; text-align: center; display: inline-block; height: 16px; min-width: 16px; max-width: auto!important; border: none 0; border-radius: 8px; position: absolute; z-index: 3; top: -4px; left: 20px;}
+.head-user-menu dl div.addcart-goods-num { font: bold 11px/14px Verdana; color: #FFF; background: #F00; text-align: center; display: inline-block; height: 16px; min-width: 16px; max-width: auto!important; border: none 0; border-radius: 8px; position: absolute; z-index: 3; top: -4px; left: 20px;*top: 10px; *left: 120px;}
 
 /* 公用导航区域 
 -------------------------------------- */
@@ -216,6 +220,22 @@
 .nch-breadcrumb span.arrow { font-family: "宋体"; line-height: 20px; color: #AAA; margin: 0 6px;}
 .nch-breadcrumb a { color: #777; display: block; }
 .nch-breadcrumb a:hover { color: #D93600;}
+
+/* 返回顶部 */
+#go_top{position: absolute;right: -41px;z-index: 9999;width: 40px;}
+#go_top ul{ width:40px; font-size:12px;font-weight: bold;position: fixed;top: 50%;margin-top: -153px; _position:absolute;}
+#go_top li{ height:40px; margin-bottom:1px; float:left;}
+#go_top li span{ display:inline-block; *display:inline; *zoom:1; width:26px; padding-top: 7px; line-height: 13px; letter-spacing: 1px;}
+#go_top a{ display:block; width:40px; height:40px; line-height:40px; color:#fff; text-align:center;}
+#go_top .g_1 a{ background:#c7000a;}
+#go_top .g_2 a{ background:#ef8620;}
+#go_top .g_3 a{ background:#008cc7;}
+#go_top .g_4 a{ background:#00c796;}
+#go_top .g_5 a{ background:#dc59a9;}
+#go_top .g_6 a{ background:#9dc012;}
+#go_top .g_7 a{ background:#aaaaaa url(../images/global/ico_go_top.png) no-repeat center center; text-indent:-999em;}
+#go_top .g_8 a{ background:#12c051;}
+#go_top a:hover{text-decoration: none;filter: alpha(opacity=80);opacity: .8;}
 
 /* 公用底部区域
 -------------------------------------- */
