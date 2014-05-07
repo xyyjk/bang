@@ -22,7 +22,9 @@
 <!-- PublicTopLayout Begin -->
 <div class="public-top-layout full">
   <div class="topbar wrapper">
-    <div class="user-entry"> <span class="favorite fl"><a href="javascript:;" onClick="addFavorite(window.location,document.title)"><i class="ico"></i>收藏帮帮网</a></span> <span class="seller-login fl"><a href="#"><i class="ico"></i>商家管理中心</a></span>
+    <div class="user-entry">
+      <span class="favorite fl"><a href="javascript:;" onClick="addFavorite(window.location,document.title)"><i class="ico"></i>收藏帮帮网</a></span>
+      <span class="seller-login fl"><a href="#"><i class="ico"></i>商家管理中心</a></span>
       <div class="fr">您好，欢迎来到棒棒网！<span>[<a href="#">登录</a>]</span><span>[<a href="#">免费注册</a>]</span></div>
     </div>
     <div class="quick-menu">
@@ -47,10 +49,10 @@
       </dl>
       <dl>
         <dt>手机棒棒<i></i></dt>
-        <dd>
+        <dd class="phone">
           <ul>
-            <li><a href="#">link name</a></li>
-            <li><a href="#">link name</a></li>
+            <li><span>手机棒棒</span><img src="assets/images/global/qr_wx.gif" width="86" height="86" alt="手机棒棒"/></li>
+            <li class="pt10"><span>棒棒微信</span><img src="assets/images/global/qr_wap.gif" width="86" height="86" alt="棒棒微信"/></li>
           </ul>
         </dd>
       </dl>
@@ -142,26 +144,15 @@
             <h4>最新加入的商品</h4>
           </div>
           <div class="incart-goods-box">
-            <div class="incart-goods"> 
-              <!-- loading状态
+            <div class="incart-goods">
+            <!-- loading状态
             <img class="loading" src="assets/images/global/loading.gif" /> --> 
-              <!-- 无商品状态
+            <!-- 无商品状态
             <div class="no-order"><span>您的购物车中暂无商品，赶快选择心爱的商品吧！</span></div> --> 
-              <!-- 商品列表 -->
-              <dl id="cart_item_320">
-                <dt class="goods-name"><a href="#">Hello/哈奴 男冬装男士休闲纯色加绒打底衫扣子领长袖T恤保暖秋衣 黑色 XL</a></dt>
-                <dd class="goods-thumb"><a href="#" title="Hello/哈奴 男冬装男士休闲纯色加绒打底衫扣子领长袖T恤保暖秋衣 黑色 XL"><img src="assets/pic/index/60_60_2.jpg"></a></dd>
-                <dd class="goods-sales"></dd>
-                <dd class="goods-price"><em>¥69.00×1</em></dd>
-                <dd class="handle"><em><a href="javascript:void(0);" onClick="drop_topcart_item(320,320);">删除</a></em></dd>
-              </dl>
-              <dl id="cart_item_175">
-                <dt class="goods-name"><em><a href="#">BH 必艾奇 tecnovita YV82 企鹅踏步机 台湾制造进口 YV82 企鹅踏步机+原装拉绳</a></em></dt>
-                <dd class="goods-thumb"><em><a href="#" title="BH 必艾奇 tecnovita YV82 企鹅踏步机 台湾制造进口 YV82 企鹅踏步机+原装拉绳"><img src="assets/pic/index/60_60_3.jpg"></a></em></dd>
-                <dd class="goods-sales"></dd>
-                <dd class="goods-price"><em><em>¥790.00×1</em></em></dd>
-                <dd class="handle"><em><em><a href="javascript:void(0);" onClick="drop_topcart_item(175,175);">删除</a></em></em></dd>
-              </dl>
+            <!-- 商品列表 -->
+            <dl id="cart_item_320">
+              <dt class="goods-name"><a href="#">Hello/哈奴 男冬装男士休闲纯色加绒打底衫扣子领长袖T恤保暖秋衣 黑色 XL</a></dt><dd class="goods-thumb"><a href="#" title="Hello/哈奴 男冬装男士休闲纯色加绒打底衫扣子领长袖T恤保暖秋衣 黑色 XL"><img src="assets/pic/index/60_60_2.jpg"></a></dd><dd class="goods-sales"></dd><dd class="goods-price"><em>¥69.00×1</em></dd><dd class="handle"><em><a href="javascript:void(0);" onClick="drop_topcart_item(320,320);">删除</a></em></dd></dl>
+            <dl id="cart_item_175"><dt class="goods-name"><em><a href="#">BH 必艾奇 tecnovita YV82 企鹅踏步机 台湾制造进口 YV82 企鹅踏步机+原装拉绳</a></em></dt><dd class="goods-thumb"><em><a href="#" title="BH 必艾奇 tecnovita YV82 企鹅踏步机 台湾制造进口 YV82 企鹅踏步机+原装拉绳"><img src="assets/pic/index/60_60_3.jpg"></a></em></dd><dd class="goods-sales"></dd><dd class="goods-price"><em><em>¥790.00×1</em></em></dd><dd class="handle"><em><em><a href="javascript:void(0);" onClick="drop_topcart_item(175,175);">删除</a></em></em></dd></dl>
             </div>
           </div>
           <div class="checkout"> <span class="total-price">共<i>2</i>种商品&nbsp;&nbsp;总计金额：<em>¥859.00</em></span><a href="#" class="btn-cart">结算购物车中的商品</a> </div>
@@ -171,15 +162,16 @@
     </div>
   </div>
 </div>
-<!-- PublicHeadLayout End --> 
+<!-- PublicHeadLayout End -->
 <!-- publicNavLayout Begin -->
 <div class="public-nav-layout">
   <div class="wrapper">
     <div class="all-category">
+        
       <div class="title">
         <h3><a href="#">全部商品分类</a></h3>
-        <i class="arrow"></i> </div>
-      <div class="category" style="display:none !important;">
+        <i class="arrow"></i></div>
+      <div class="category">
         <ul class="menu">
           <li class="odd" >
             <div class="cate">建材</div>
@@ -211,7 +203,9 @@
                 <div class="box">
                   <h4><a href="#">灯饰照明品牌</a></h4>
                   <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
-                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                </div>
               </div>
             </div>
           </li>
@@ -244,7 +238,9 @@
                 <div class="box">
                   <h4><a href="#">灯饰照明品牌</a></h4>
                   <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
-                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                </div>
               </div>
             </div>
           </li>
@@ -277,7 +273,9 @@
                 <div class="box">
                   <h4><a href="#">灯饰照明品牌</a></h4>
                   <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
-                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                </div>
               </div>
             </div>
           </li>
@@ -328,7 +326,9 @@
                 <div class="box">
                   <h4><a href="#">灯饰照明品牌</a></h4>
                   <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
-                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                </div>
               </div>
             </div>
           </li>
@@ -380,7 +380,9 @@
                 <div class="box">
                   <h4><a href="#">灯饰照明品牌</a></h4>
                   <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
-                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                </div>
               </div>
             </div>
           </li>
@@ -431,7 +433,9 @@
                 <div class="box">
                   <h4><a href="#">灯饰照明品牌</a></h4>
                   <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
-                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                </div>
               </div>
             </div>
           </li>
@@ -482,7 +486,9 @@
                 <div class="box">
                   <h4><a href="#">灯饰照明品牌</a></h4>
                   <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
-                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                </div>
               </div>
             </div>
           </li>
@@ -534,7 +540,9 @@
                 <div class="box">
                   <h4><a href="#">灯饰照明品牌</a></h4>
                   <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
-                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                </div>
               </div>
             </div>
           </li>
@@ -585,7 +593,9 @@
                 <div class="box">
                   <h4><a href="#">灯饰照明品牌</a></h4>
                   <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
-                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                </div>
               </div>
             </div>
           </li>
@@ -637,14 +647,15 @@
                 <div class="box">
                   <h4><a href="#">灯饰照明品牌</a></h4>
                   <p class="tags"><a href="#">奥朵</a><a href="#">翰源</a><a href="#">麦辉</a><a href="#">蒙特丽</a><a href="#">光印</a><a href="#">光印</a><a href="#">欧塞洛斯</a><a href="#">岚珊</a><a href="#">弗森</a><a href="#">亚马逊</a><a href="#">君御</a><a href="#">闪炫</a><a href="#">世源</a><a href="#">馨兴点灯</a><a href="#">好视力</a><a href="#">简颜照明</a></p>
-                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a> </div>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                  <a class="brand mt10" href="#"><img src="assets/pic/index/180_60_1.jpg" width="180" height="60"  alt=""/></a>
+                </div>
               </div>
             </div>
           </li>
         </ul>
-        <div class="cat_chat"><a href="#"><img src="assets/images/index/cat_chat.gif" width="176" height="28" alt=""/></a></div>
+      </div>    
       </div>
-    </div>
     <ul class="site-menu">
       <li><a href="index.html" class="current">首页</a></li>
       <li><a href="#">棒棒团购</a></li>
@@ -655,12 +666,12 @@
     </ul>
   </div>
 </div>
-<!-- PublicNavLayout End--> 
+<!-- PublicNavLayout End-->
 <!--[if IE 6]>
 <script type="text/javascript" src="assets/js/ie6.js" charset="utf-8"></script>
 <![endif]-->
 <div class="list-main">
-  <div class="wrapper clearfix">
+  <div class="wrapper clearfix pr">
     <div class="crumb"> <span class="ico_home">首页</span><i>&gt;</i><a href="#">基础装饰材料</a> </div>
     <!-- 侧栏 -->
     <div class="sidebar">
@@ -1035,6 +1046,13 @@
       </div>
       
     </div>
+    <div id="go_top">
+      <ul>
+        <li class="g_1"><a href="#" title="家装服务" target="_blank"><span>家装服务</span></a></li>
+        <li class="g_7"><a href="javascript:void(0)" title="返回顶部"><span>返回顶部</span></a></li>
+      </ul>
+    </div>
+    <!-- /go_top -->
   </div>
 </div>
 <div id="footer">
