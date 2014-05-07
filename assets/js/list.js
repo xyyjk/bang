@@ -10,7 +10,7 @@ $(function(){
       function(){
         var oData = $(".v-tabs");
         var $cont = oData.find(".tabcon div").length;
-        var $arrtZi = $(".v-tabs .tabcon");
+        var $arrtZi = oData.find(".tabcon");
         var $arrtDiv = $arrtZi.find("div");
         $(this).hide();
         $(this).next().show();  
@@ -38,7 +38,7 @@ $(function(){
       function(){
         var oData = $(".v-tabs");
         var $cont = oData.find(".tabcon div").length;
-        var $arrtZi = $(".v-tabs .tabcon");
+        var $arrtZi = oData.find(".tabcon");
         var $arrtDiv = $arrtZi.find("div");
         $(this).hide();
         $(this).prev().show();  
@@ -54,4 +54,34 @@ $(function(){
          } 
       }
     );
+    //计算隐藏分类标题
+    function carAllitemmenu(){
+      $("#select").find(".prop-attrs:lt(4)").show();  //显示前4个选项
+      var oData = $(".v-tabs");
+      var $cont = oData.find(".tabcon div").length;
+      var $arrtZi = oData.find(".tabcon");
+      var $arrtDiv = $arrtZi.find("div");
+      
+      for(var i=0;i<$cont;i++){
+         $arrtZi=$arrtDiv.eq(i).attr("brand")
+         if($arrtZi=="more"){
+          $arrtDiv.eq(i).hide();
+         }else{
+          $arrtDiv.eq(i).show();
+         }
+       } 
+    };
+    carAllitemmenu();
+    //点击显示更多
+    $("#moreProp .attr-extra").click(function(){
+        $("#select").find(".prop-attrs").show();
+        $("#moreProp").hide();
+        $("#lessProp").show();
+    });
+    $("#lessProp .attr-extra").click(function(){
+        $("#select").find(".prop-attrs:gt(3)").hide();
+        $("#lessProp").hide();
+        $("#moreProp").show();
+    });
+    
 });
