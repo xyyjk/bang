@@ -6,8 +6,8 @@
 .public-nav-layout .category .cat_chat{height: 50px;background: #fff;text-align: center;}
 .public-nav-layout .category .cat_chat a{ display:block;}
 .public-nav-layout .category .cat_chat img{padding-top: 10px;}
-.focus_layout{}
-.focus_layout .pull_left{margin-left: 212px; border-bottom:solid 1px #eee;}
+.focus_layout{ display:inline-block; *display:inline; *zoom:1;}
+.focus_layout .pull_left{margin-left: 212px;_margin-left:104px; border-bottom:solid 1px #eee;}
 .focus_layout .pull_right{width:210px; border-bottom:solid 1px #eee; border-right:solid 1px #eee; border-left:solid 1px #eee;}
 /* 顶部banner */
 .focus_layout .banner_box{ width:776px; height:400px; overflow:hidden; position:relative; }
@@ -101,7 +101,7 @@
 .home-sale-layout .sale-discount dd.goods-price-discount { color: #FFF; background: url(../images/index/home_bg.png) no-repeat -100px -100px; text-align: center; width: 48px; height: 24px; padding: 28px 0 16px 0; top: -40px; right: 5px;}
 .home-sale-layout .sale-discount dd.goods-price-discount em { font-size: 16px; font-weight: 600; margin-right: 2px; color:#fff;}
 .home-sale-layout .sale-discount dd.time-remain { color: #999; line-height: 16px; text-align: center; width: 210px; height: 16px; top: -180px; left: 0;}
-.home-sale-layout .sale-discount dd.time-remain i { background: url(../images/index/home_bg.png) no-repeat -40px -60px; vertical-align: middle; display: inline-block; width: 11px; height: 11px; margin-right: 4px;}
+.home-sale-layout .sale-discount dd.time-remain i { background: url(../images/index/home_bg.png) no-repeat -40px -60px; _background: url(../images/index/home_bg.png) no-repeat -40px -57px; vertical-align: middle; display: inline-block; width: 11px; height: 11px; margin-right: 4px;}
 .home-sale-layout .sale-discount dd.time-remain em { font-weight: 600; color: #555; margin: 0 2px;}
 .home-sale-layout .sale-discount dd.goods-buy-btn {}
 .home-sale-layout .sale-discount .preNext { opacity: 0.5 !important;}

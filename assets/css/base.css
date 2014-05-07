@@ -4,7 +4,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html { background: #fff; }
 body { font: 12px Verdana, Tahoma, "Microsoft Yahei", SimSun;*font-family:"Microsoft Yahei"; color: #666; }
-h1, h2, h3, h4, h5, h6, i, em { line-height: 1em; color: #666; font-weight: normal; }
+h1, h2, h3, h4, h5, h6, i, em { line-height: 1em; color: #666; font-weight: normal; font-style:normal; }
 input,button,select,textarea{ outline:none}
 a { 
   text-decoration: none;

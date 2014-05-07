@@ -4,20 +4,19 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width">
-<title>团购 - 棒棒 - slogan</title>
-<link rel="stylesheet" href="assets/css/base.css?v=1.0.140424">
+<title>棒棒 - slogan</title>
+<meta name="keywords" content=" ">
+<meta name="description" content=" ">
+<link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/public.css?v=1.0.140424">
-<link rel="stylesheet" href="assets/css/groupbuy.css?v=1.0.140424">
-<!--[if lt IE 9]>
-	<script src="assets/js/respond.src.js"></script>
-<![endif]-->
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/list.css">
 <script src="assets/js/jquery.js?v=1.0.140424"></script>
 <script src="assets/js/jquery.masonry.js?v=1.0.140424"></script>
 <script src="assets/js/common.js?v=1.0.140424"></script>
-<script src="assets/js/jquery.SuperSlide.2.1.js?v=1.0.140506"></script>
-<script src="assets/js/groupbuy.js?v=1.0.140424"></script>
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="assets/ico/favicon.png">
+<script src="assets/js/index.js?v=1.0.140427"></script>
+<script src="assets/js/list.js"></script>
+<script src="assets/js/jquery.SuperSlide.2.1.js?v=1.0.140427"></script>
 </head>
 <body>
 <!-- PublicTopLayout Begin -->
@@ -168,6 +167,7 @@
 <div class="public-nav-layout">
   <div class="wrapper">
     <div class="all-category">
+        
       <div class="title">
         <h3><a href="#">全部商品分类</a></h3>
         <i class="arrow"></i></div>
@@ -247,7 +247,6 @@
           <li class="odd" >
             <div class="class"> <span class="ico"><img src="assets/images/global/category-pic-3.jpg"></span>
               <h4><a href="#">定制加工</a></h4>
-
               <span class="recommend-class"> <a href="#" title="家具">家具</a> <a href="#" title="橱柜">橱柜</a> <a href="#" title="衣帽柜">衣帽柜</a> <a href="#" title="柜门">柜门</a></span><span class="arrow"></span> </div>
             <div class="sub-class">
               <div class="pull_left">
@@ -671,229 +670,381 @@
 <!--[if IE 6]>
 <script type="text/javascript" src="assets/js/ie6.js" charset="utf-8"></script>
 <![endif]-->
-<div class="group_main">
+<div class="list-main">
   <div class="wrapper clearfix pr">
-    <div class="leftbox">
-      <div class="nav_menu">
-        <dl>
-          <dd><i>&gt;</i><a href="#" target="_blank">水电暖材料</a></dd>
-          <dd><i>&gt;</i><a href="#" target="_blank">基础装饰材料</a></dd>
-          <dd><i>&gt;</i><a href="#" target="_blank">定制加工</a></dd>
-          <dd><i>&gt;</i><a href="#" target="_blank">墙地面材料</a></dd>
-          <dd><i>&gt;</i><a href="#" target="_blank">门窗</a></dd>
-          <dd><i>&gt;</i><a href="#" target="_blank">厨房卫浴</a></dd>
-          <dd><i>&gt;</i><a href="#" target="_blank">灯具</a></dd>
-          <dd><i>&gt;</i><a href="#" target="_blank">住宅家具</a></dd>
-          <dd><i>&gt;</i><a href="#" target="_blank">商业办公家具</a></dd>
-          <dd><i>&gt;</i><a href="#" target="_blank">家居馆</a></dd>
-          <dd><i>&gt;</i><a href="#" target="_blank">商业办公家具</a></dd>
-        </dl>
+    <div class="crumb"> <span class="ico_home">首页</span><i>&gt;</i><a href="#">基础装饰材料</a> </div>
+    <!-- 侧栏 -->
+    <div class="sidebar">
+      <div class="sortlist mb10" id="sortlist">
+        <div class="mc">
+          <div class="item current">
+            <h3><b></b>灯饰照明</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>厨房卫浴</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>五金工具</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>电工电料</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>墙地面材料</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>装饰材料</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3><b></b>装修服务</h3>
+            <ul>
+              <li><a href="#">台灯</a></li>
+              <li><a href="#">节能灯</a></li>
+              <li><a href="#">装饰灯</a></li>
+              <li><a href="#">落地灯</a></li>
+              <li><a href="#">手电筒/应急灯</a></li>
+              <li><a href="#">LED灯</a></li>
+              <li><a href="#">吸顶灯</a></li>
+              <li><a href="#">氛围照明</a></li>
+              <li><a href="#">吊灯</a></li>
+              <li><a href="#">筒灯/射灯</a></li>
+              <li><a href="#">室外/庭院灯</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ad mt10 mb10">
+        <a href="#"><img src="assets/pic/index/210x240.jpg"></a>
+      </div>
+      <div id="finalbuy" class="s_product mb10">
+        <div class="mt">
+          <h2>推广产品</h2>
+        </div>
+        <div class="mc">
+          <ul>
+            <li class="fore">
+              <div class="p-img"><a href="#" target="_blank"><img width="100" height="100" src="assets/pic/index/100x100.jpg"></a></div>
+              <div class="rate"><a href="#" target="_blank">旗航壁纸 现代简约植绒墙纸MRT-F客厅卧室满铺电视沙发背景墙纸 5.3平米 057金黄 057金黄色<font name="1020672668" class="adwords" style="color: #ff0000">【5.3-5.8品牌团】历史最低价 抄底价疯抢</font></a></div>
+              <div class="p-price-jj clearfix"><strong class="fl"><i>￥</i>108.00</strong><span class="fl"><em>直降</em>已优惠￥380</span></div>
+            </li>
+            <li class="fore">
+              <div class="p-img"><a href="#" target="_blank"><img width="100" height="100" src="assets/pic/index/100x100.jpg"></a></div>
+              <div class="rate"><strong>10%会买：</strong><a href="#" target="_blank">旗航壁纸 现代简约植绒墙纸MRT-F客厅卧室满铺电视沙发背景墙纸 5.3平米 057金黄 057金黄色<font name="1020672668" class="adwords" style="color: #ff0000">【5.3-5.8品牌团】历史最低价 抄底价疯抢</font></a></div>
+              <div class="p-price-jj clearfix"><strong class="fl"><i>￥</i>108.00</strong><span class="fl"><em>直降</em>已优惠￥380</span></div>
+            </li>
+            <li class="fore">
+              <div class="p-img"><a href="#" target="_blank"><img width="100" height="100" src="assets/pic/index/100x100.jpg"></a></div>
+              <div class="rate"><a href="#" target="_blank">旗航壁纸 现代简约植绒墙纸MRT-F客厅卧室满铺电视沙发背景墙纸 5.3平米 057金黄 057金黄色<font name="1020672668" class="adwords" style="color: #ff0000">【5.3-5.8品牌团】历史最低价 抄底价疯抢</font></a></div>
+              <div class="p-price-jj clearfix"><strong class="fl"><i>￥</i>108.00</strong><span class="fl"><em>直降</em>已优惠￥380</span></div>
+            </li>
+            <li class="fore">
+              <div class="p-img"><a href="#" target="_blank"><img width="100" height="100" src="assets/pic/index/100x100.jpg"></a></div>
+              <div class="rate"><a href="#" target="_blank">旗航壁纸 现代简约植绒墙纸MRT-F客厅卧室满铺电视沙发背景墙纸 5.3平米 057金黄 057金黄色<font name="1020672668" class="adwords" style="color: #ff0000">【5.3-5.8品牌团】历史最低价 抄底价疯抢</font></a></div>
+              <div class="p-price-jj clearfix"><strong class="fl"><i>￥</i>108.00</strong><span class="fl"><em>直降</em>已优惠￥380</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="finalbuy" class="s_product mb10">
+        <div class="mt">
+          <h2>浏览过得商品</h2>
+        </div>
+        <div class="mc">
+          <ul>
+            <li class="fore">
+              <div class="p-img"><a href="#" target="_blank"><img width="100" height="100" src="assets/pic/index/100x100.jpg"></a></div>
+              <div class="rate"><strong>10%会买：</strong><a href="#" target="_blank">【货到付款】旗航壁纸 现代简约植绒墙纸MRT-F客厅卧室满铺电视沙发背景墙纸 5.3平米 057金黄 057金黄色<font name="1020672668" class="adwords" style="color: #ff0000">【5.3-5.8品牌团】历史最低价 抄底价疯抢</font></a></div>
+              <div class="p-price"><strong>￥108.00</strong></div>
+            </li>
+            <li class="fore">
+              <div class="p-img"><a href="#" target="_blank"><img width="100" height="100" src="assets/pic/index/100x100.jpg"></a></div>
+              <div class="rate"><strong>10%会买：</strong><a href="#" target="_blank">【货到付款】旗航壁纸 现代简约植绒墙纸MRT-F客厅卧室满铺电视沙发背景墙纸 5.3平米 057金黄 057金黄色<font name="1020672668" class="adwords" style="color: #ff0000">【5.3-5.8品牌团】历史最低价 抄底价疯抢</font></a></div>
+              <div class="p-price"><strong>￥108.00</strong></div>
+            </li>
+            <li class="fore">
+              <div class="p-img"><a href="#" target="_blank"><img width="100" height="100" src="assets/pic/index/100x100.jpg"></a></div>
+              <div class="rate"><strong>10%会买：</strong><a href="#" target="_blank">【货到付款】旗航壁纸 现代简约植绒墙纸MRT-F客厅卧室满铺电视沙发背景墙纸 5.3平米 057金黄 057金黄色<font name="1020672668" class="adwords" style="color: #ff0000">【5.3-5.8品牌团】历史最低价 抄底价疯抢</font></a></div>
+              <div class="p-price"><strong>￥108.00</strong></div>
+            </li>
+            <li class="fore">
+              <div class="p-img"><a href="#" target="_blank"><img width="100" height="100" src="assets/pic/index/100x100.jpg"></a></div>
+              <div class="rate"><strong>10%会买：</strong><a href="#" target="_blank">【货到付款】旗航壁纸 现代简约植绒墙纸MRT-F客厅卧室满铺电视沙发背景墙纸 5.3平米 057金黄 057金黄色<font name="1020672668" class="adwords" style="color: #ff0000">【5.3-5.8品牌团】历史最低价 抄底价疯抢</font></a></div>
+              <div class="p-price"><strong>￥108.00</strong></div>
+            </li>
+            <li class="fore">
+              <div class="p-img"><a href="#" target="_blank"><img width="100" height="100" src="assets/pic/index/100x100.jpg"></a></div>
+              <div class="rate"><strong>10%会买：</strong><a href="#" target="_blank">【货到付款】旗航壁纸 现代简约植绒墙纸MRT-F客厅卧室满铺电视沙发背景墙纸 5.3平米 057金黄 057金黄色<font name="1020672668" class="adwords" style="color: #ff0000">【5.3-5.8品牌团】历史最低价 抄底价疯抢</font></a></div>
+              <div class="p-price"><strong>￥108.00</strong></div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="rightbox">
-    	<div class="focus_pic clearfix">
-        <div class="left_pic">
-          <div class="foucs_pic_box">
-            <ul class="pic">
-              <li><a href="#" target="_blank"><img src="assets/pic/groupbuy/ct01.jpg"/></a>
-                <div class="title">
-                  <h3>伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计</h3>
+    <div class="list_container">
+      <div class="select" id="select">
+        <div class="mt">
+          <h1>壁纸<strong>&nbsp;-&nbsp;商品筛选</strong></h1>
+        </div>
+        <div class="mc attrs">
+          <div class="brand-attr prop-attrs hide">
+            <div class="attr">
+              <div class="a-key">品牌：</div>
+              <div class="a-values">
+                <div class="v-option" id="voption"><span class="o-more suck_down"><b></b>更多</span><span class="o-more suck_up fold hide"><b></b>收起</span></div>
+                <div class="v-tabs">
+                  <ul class="tab hide">
+                    <li class="curr" rel="0">所有品牌<b></b></li>
+                    <li rel="a">A<b></b></li>
+                    <li rel="b">B<b></b></li>
+                    <li rel="c">C<b></b></li>
+                    <li rel="d">D<b></b></li>
+                    <li rel="e">E<b></b></li>
+                    <li rel="f">F<b></b></li>
+                    <li rel="g">G<b></b></li>
+                    <li rel="h">H<b></b></li>
+                    <li rel="i">I<b></b></li>
+                    <li rel="j">J<b></b></li>
+                    <li rel="k">K<b></b></li>
+                    <li rel="l">L<b></b></li>
+                    <li rel="m">M<b></b></li>
+                    <li rel="n">N<b></b></li>
+                    <li rel="o">O<b></b></li>
+                    <li rel="p">P<b></b></li>
+                    <li rel="q">Q<b></b></li>
+                    <li rel="r">R<b></b></li>
+                    <li rel="s">S<b></b></li>
+                    <li rel="t">T<b></b></li>
+                    <li rel="u">U<b></b></li>
+                    <li rel="v">V<b></b></li>
+                    <li rel="w">W<b></b></li>
+                    <li rel="x">X<b></b></li>
+                    <li rel="y">Y<b></b></li>
+                    <li rel="z">Z<b></b></li>
+                    <li rel="other">其它<b></b></li>
+                  </ul>
+                  <div class="tabcon undefined">
+                    <div brand="less" rel="q"><a href="#">旗航壁纸</a></div>
+                    <div brand="less" rel="c"><a href="#">超萌象</a></div>
+                    <div brand="less" rel="g"><a href="#">格林威尔</a></div>
+                    <div brand="less" rel="z"><a href="#">纸尚美学</a></div>
+                    <div brand="less" rel="s"><a href="#">塞拉维（CESELAVIE）</a></div>
+                    <div brand="less" rel="m"><a href="#">玛尚家饰</a></div>
+                    <div brand="less" rel="h"><a href="#">海宝先生（hbsir）</a></div>
+                    <div brand="less" rel="s"><a href="#">斯图</a></div>
+                    <div brand="less" rel="a"><a href="#">艾亿</a></div>
+                    <div brand="less" rel="h"><a href="#">荷尖尖</a></div>
+                    <div brand="less" rel="l"><a href="#">洛可可</a></div>
+                    <div brand="less" rel="y"><a href="#">玉兰壁纸</a></div>
+                    <div brand="less" rel="d"><a href="#">多美正</a></div>
+                    <div brand="less" rel="b"><a href="#">博典</a></div>
+                    <div brand="less" rel="m"><a href="#">米素</a></div>
+                    <div brand="more" rel="l"><a href="#">靓雅壁纸（your home）</a></div>
+                    <div brand="more" rel="b"><a href="#">布雷克壁纸（PRAGE）</a></div>
+                    <div brand="more" rel="a"><a href="#">爱我品</a></div>
+                    <div brand="more" rel="w"><a href="#">唯基</a></div>
+                    <div brand="more" rel="l"><a href="#">乐嘉</a></div>
+                    <div brand="more" rel="j"><a href="#">居梦坞（Dreamwall）</a></div>
+                    <div brand="more" rel="z"><a href="#">纸秀壁纸</a></div>
+                    <div brand="more" rel="y"><a href="#">莹臻</a></div>
+                    <div brand="more" rel="q"><a href="#">蔷艺工坊</a></div>
+                    <div brand="more" rel="d"><a href="#">德瑞（DE）</a></div>
+                    <div brand="more" rel="d"><a href="#">迪沃斯（Dwalls）</a></div>
+                    <div brand="more" rel="a"><a href="#">阿尔法</a></div>
+                    <div brand="more" rel="y"><a href="#">玉兰</a></div>
+                    <div brand="more" rel="m"><a href="#">木臣</a></div>
+                    <div brand="more" rel="w"><a href="#">WOMA</a></div>
+                    <div brand="more" rel="d"><a href="#">德诺</a></div>
+                    <div brand="more" rel="m"><a href="#">沐然壁纸</a></div>
+                    <div brand="more" rel="r"><a href="#">瑞宝（rainbow）</a></div>
+                    <div brand="more" rel="s"><a href="#">山月（SANGETSU）</a></div>
+                    <div brand="more" rel="h"><a href="#">还原.爱</a></div>
+                    <div brand="more" rel="d"><a href="#">黛狄尔斯（De Dears）</a></div>
+                    <div brand="more" rel="y"><a href="#">意诺壁纸</a></div>
+                    <div brand="more" rel="m"><a href="#">美乐乐家居</a></div>
+                    <div brand="more" rel="r"><a href="#">瑞金俪（RAY-KINGLY）</a></div>
+                    <div brand="more" rel="j"><a href="#">嘉力丰（GAREFU）</a></div>
+                    <div brand="more" rel="c"><a href="#">CEO</a></div>
+                    <div brand="more" rel="g"><a href="#">格莱美</a></div>
+                    <div brand="more" rel="d"><a hhref="#">帝轩</a></div>
+                    <div brand="more" rel="q"><a href="#">其它</a></div>
+                  </div>
                 </div>
-              </li>
-              <li><a href="#" target="_blank"><img src="assets/pic/groupbuy/ct01.jpg"/></a>
-                <div class="title">
-                  <h3>伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计</h3>
+              </div>
+            </div>
+          </div>
+          <div class="prop-attrs hide">
+            <div class="attr">
+              <div class="a-key">类别：</div>
+              <div class="a-values">
+                <div class="v-fold">
+                  <ul class="f-list">
+                    <li><a href="#">无纺布墙纸</a></li>
+                    <li><a href="#">PVC墙纸</a></li>
+                    <li><a href="#">纯纸墙纸</a></li>
+                    <li><a href="#">植绒墙纸</a></li>
+                    <li><a href="#">壁纸胶</a></li>
+                    <li><a href="#">其它</a></li>
+                  </ul>
                 </div>
-              </li>
-              <li><a href="#" target="_blank"><img src="assets/pic/groupbuy/ct01.jpg"/></a>
-                <div class="title">
-                  <h3>伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计伦敦优雅精致的现代家居装修设计</h3>
+              </div>
+            </div>
+          </div>
+          <div class="prop-attrs hide">
+            <div class="attr">
+              <div class="a-key">风格：</div>
+              <div class="a-values">
+                <div class="v-fold">
+                  <ul class="f-list">
+                    <li><a href="#">欧式</a></li>
+                    <li><a href="#">简约现代</a></li>
+                    <li><a href="#">田园</a></li>
+                    <li><a href="#">其它</a></li>
+                    <li><a href="#">美式</a></li>
+                    <li><a href="#">儿童</a></li>
+                  </ul>
                 </div>
-              </li>
-            </ul>
-            <ul class="hd"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="prop-attrs hide">
+            <div class="attr">
+              <div class="a-key">价格：</div>
+              <div class="a-values">
+                <div class="v-fold">
+                  <ul class="f-list">
+                    <li><a href="#">1-199</a></li>
+                    <li><a href="#">200-499</a></li>
+                    <li><a href="#">500-899</a></li>
+                    <li><a href="#">900以上</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prop-attrs hide">
+            <div class="attr">
+              <div class="a-key">材质：</div>
+              <div class="a-values">
+                <div class="v-fold">
+                  <ul class="f-list">
+                    <li><a href="#">无纺布墙纸</a></li>
+                    <li><a href="#">PVC墙纸</a></li>
+                    <li><a href="#">纯纸墙纸</a></li>
+                    <li><a href="#">植绒墙纸</a></li>
+                    <li><a href="#">墙贴</a></li>
+                    <li><a href="#">硅藻泥</a></li>
+                    <li><a href="#">壁画</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prop-attrs hide">
+            <div class="attr">
+              <div class="a-key">规格：</div>
+              <div class="a-values">
+                <div class="v-fold">
+                  <ul class="f-list">
+                    <li><a href="#">5.3㎡</a></li>
+                    <li><a href="#">7㎡</a></li>
+                    <li><a href="#">16.5㎡</a></li>
+                    <li><a href="#">其它</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="right_pic">
-          <div class="topbox">
-            <a href="#" target="_blank"><img src="assets/pic/groupbuy/ct02.jpg" width="270" height="160" /></a>
-            <h3>伦敦优雅精致的现代家居装修设计</h3>
+        <div class="mb" id="moreProp">
+          <div class="attr-extra">
+            <div >更多选项<b></b></div>
           </div>
-          <div class="botbox">
-            <a href="#" target="_blank"><img src="assets/pic/groupbuy/ct03.jpg" width="270" height="140" /></a>
-            <h3>伦敦优雅精致的现代家居装修设计</h3>
+        </div>
+        <div class="mb hide" id="lessProp">
+          <div class="attr-extra open">
+            <div>收起<b></b></div>
           </div>
         </div>
       </div>
-      <!-- 产品模块 -->
-      <div class="g_product">
-        <div class="m_hd mb10">
-            <h2>水电暖材料</h2>
-              <dl>
-                <dd><a href="javascript:;">默认</a></dd>
-                  <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
-                  <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
-              </dl>
-          </div>
-          <div class="m_bd">
-            <dl class="clearfix">
-                <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-                  <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-                  <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-                  <div style="clear:both;"></div>
-              </dl>
-          </div>
-      </div>
-      <!-- 产品模块 -->
-      <div class="g_product">
-        <div class="m_hd mb10">
-            <h2>基础装饰材料</h2>
-              <dl>
-                <dd><a href="javascript:;">默认</a></dd>
-                  <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
-                  <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
-              </dl>
-          </div>
-          <div class="m_bd">
-            <dl>
-                <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-                  <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-                  <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-              </dl>
-          </div>
-      </div>
-      <!-- 产品模块 -->
-      <div class="g_product">
-        <div class="m_hd mb10">
-            <h2>定制加工</h2>
-              <dl>
-                <dd><a href="javascript:;">默认</a></dd>
-                  <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
-                  <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
-              </dl>
-          </div>
-          <div class="m_bd">
-            <dl>
-                <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-                  <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-                  <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-              </dl>
-          </div>
-      </div>
-      <!-- 产品模块 -->
-      <div class="g_product">
-        <div class="m_hd mb10">
-            <h2>墙地面材料</h2>
-              <dl>
-                <dd><a href="javascript:;">默认</a></dd>
-                  <dd><a href="javascript:;">销量</a><i class="up"></i></dd>
-                  <dd><a href="javascript:;">最新</a><i class="down"></i></dd>
-              </dl>
-          </div>
-          <div class="m_bd">
-            <dl>
-                <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm01.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-                  <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm02.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-                  <dd>
-                    <a href="#" target="_blank" class="pic"><img src="assets/pic/groupbuy/cm03.jpg" width="320" height="230" /></a>
-                      <h4><a href="#" target="_blank">交换空间情系地中海 梦想中的50平米海边幽居装修50平米海边幽居装修</a></h4>
-                      <div class="item_prices">
-                        <div class="price"><span>￥</span>599</div>
-                          <div class="orig_price">￥1020</div>
-                          <div class="sold_num"><span>288</span>人想买</div>
-                      </div>
-                  </dd>
-              </dl>
-          </div>
-      </div>
+      
     </div>
     <div id="go_top">
       <ul>
@@ -904,8 +1055,6 @@
     <!-- /go_top -->
   </div>
 </div>
-
-
 <div id="footer">
   <div class="ft_help">
     <div class="wrapper">

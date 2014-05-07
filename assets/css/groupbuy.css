@@ -23,7 +23,17 @@
 .focus_pic { margin-bottom: 10px; }
 .focus_pic img { vertical-align: top; }
 .focus_pic .left_pic { position: relative; float: left; width: 770px; height: 310px; padding-right: 10px; }
-.focus_pic .left_pic h3 { position: absolute; bottom: 0; left: 0; width: 770px; height: 30px; line-height: 30px; text-indent: 30px; background: url(../images/groupbuy/bak.5.png) repeat; color: #fff; }
+/* 左侧焦点图 */
+.focus_pic .left_pic .foucs_pic_box { position: relative; float:left; width: 770px; height: 310px; overflow: hidden; }
+.focus_pic .left_pic .foucs_pic_box .pic { position: relative; z-index: 0; }
+.focus_pic .left_pic .foucs_pic_box .pic li { position: relative; }
+.focus_pic .left_pic .foucs_pic_box .title { position: absolute; bottom: 0; left: 0; width: 770px; height: 30px; text-indent: 15px; background: url(../images/groupbuy/bak.5.png) repeat; }
+.focus_pic .left_pic .foucs_pic_box .title h3 { width: 770px; line-height:30px; color: #fff; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.focus_pic .left_pic .foucs_pic_box .pic img { width: 770px; height: 310px; display: block; }
+.focus_pic .left_pic .foucs_pic_box .hd { position: absolute; bottom: 8px; right:10px; font-size: 0; z-index: 1; }
+.focus_pic .left_pic .foucs_pic_box .hd li { margin-left: 5px; background:url(../images/groupbuy/ico_s_dian.png) no-repeat 0 -15px; height: 8px; overflow: hidden; width: 8px; cursor: pointer; display: inline-block; *display:inline; zoom: 1; }
+.focus_pic .left_pic .foucs_pic_box .hd li.on { background-position: 0 0; }
+/* 右侧焦点图 */
 .focus_pic .right_pic { float: left; }
 .focus_pic .right_pic .topbox { position: relative; width: 270px; height: 160px; margin-bottom: 10px; }
 .focus_pic .right_pic .botbox { position: relative; width: 270px; height: 140px; }
