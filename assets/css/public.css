@@ -222,11 +222,14 @@
 .nch-breadcrumb a:hover { color: #D93600;}
 
 /* 返回顶部 */
-#go_top{position: absolute;right: -41px;z-index: 9999;width: 40px;}
-#go_top ul{ width:40px; font-size:12px;font-weight: bold;position: fixed;top: 50%;margin-top: -153px; _position:absolute;}
+#go_top{position: absolute;right: -41px;z-index: 9999; display:none; width: 40px; _position: absolute; _top: expression(eval(document.documentElement.scrollTop+200)); _right: -1px;}
+#go_top ul{ width:40px; font-size:12px;font-weight: bold;position: fixed;top: 50%;margin-top: -153px;}
 #go_top li{ height:40px; margin-bottom:1px; float:left;}
+#go_top li em{ width: 40px; height: 40px; line-height: 40px; text-align: center; font-weight:bold; color: #fff;}
 #go_top li span{ display:inline-block; *display:inline; *zoom:1; width:26px; padding-top: 7px; line-height: 13px; letter-spacing: 1px;}
-#go_top a{ display:block; width:40px; height:40px; line-height:40px; color:#fff; text-align:center;}
+#go_top li.m .show{display:inline-block; *display:inline; *zoom:1;}
+#go_top li.m span{ display:none;}
+#go_top a{ display:block; width:40px; height:40px; line-height:40px; color:#fff; text-align:center; outline:none;}
 #go_top .g_1 a{ background:#c7000a;}
 #go_top .g_2 a{ background:#ef8620;}
 #go_top .g_3 a{ background:#008cc7;}
@@ -236,6 +239,41 @@
 #go_top .g_7 a{ background:#aaaaaa url(../images/global/ico_go_top.png) no-repeat center center; text-indent:-999em;}
 #go_top .g_8 a{ background:#12c051;}
 #go_top a:hover{text-decoration: none;filter: alpha(opacity=80);opacity: .8;}
+
+/* 左侧客服工具 */
+#com_tools { position: fixed; top: 300px; left: 0; z-index: 9999; _position: absolute; _top: expression(eval(document.documentElement.scrollTop+300)); }
+#com_tools a { color: #B30009 }
+#com_tools a:hover { color: #ff8100; text-decoration: none }
+#com_tools .floatL { position: relative; width: 28px; float: left }
+#com_tools .floatL a { text-indent: -9999px; display: block; font-size: 0px }
+#com_tools .floatR, #com_tools .tp, #com_tools .cn { background: url(../images/global/com_tools_bg.gif) }
+#com_tools .floatR { display:none; padding-bottom: 15px; width: 130px; background-repeat: no-repeat; background-position: -131px bottom; float: left; overflow: hidden }
+#com_tools .tp { background-repeat: no-repeat; background-position: 0% 0%; height: 10px; overflow:hidden; }
+#com_tools .cn { background-repeat: repeat-y; background-position: -262px 0px }
+#com_tools .cn h3 { text-indent: -9999px; height: 36px; font-size: 0px }
+#com_tools .cn ul { padding-bottom: 0px; padding-left: 14px; padding-right: 14px; padding-top: 0px }
+#com_tools .cn ul li { border-bottom: #e6e5e4 1px solid; line-height: 36px; WORD-WRAP: break-word; height: 36px; overflow: hidden; WORD-BREAK: normal }
+#com_tools .titZx,#com_tools .titDh,#com_tools .titDc,#com_tools .icoZx,#com_tools .icoTc,#com_tools .icoFf,#com_tools .icoTl,#com_tools .btnOpen,#com_tools .btnOpen_n,#com_tools .btnCtn{ background-image: url(../images/global/com_tools.gif); background-repeat: no-repeat;}
+#com_tools .titZx { background-position: 5px -10px }
+#com_tools .titDh { background-position: 5px -66px }
+#com_tools .titDc { background-position: 5px -124px }
+#com_tools .icoZx { background-position: 2px -154px }
+#com_tools .icoTc { background-position: 0px -323px }
+#com_tools .icoFf { background-position: 2px -213px }
+#com_tools .icoTl { padding-left: 20px; display: block; font-family: "Microsoft Yahei"; background-position: 0 -266px; float: left }
+#com_tools .btnOpen { background-position: -30px -396px }
+#com_tools .btnOpen_n { background-position: 0px -530px }
+#com_tools .btnCtn { background-position: 0px -396px }
+#com_tools .icoZx,#com_tools .icoTc,#com_tools .icoFf { padding-left: 28px; display: block; float: left }
+#com_tools .btnOpen { position: relative; width: 29px; height: 118px; top: 80px; left: 0 }
+#com_tools .btnOpen_n { position: relative; width: 29px; height: 118px; top: 80px; left: 0 }
+#com_tools .btnCtn { position: relative; width: 29px; height: 118px; top: 80px; left: 0 }
+#com_tools ul li h3.titDc a { width: 80px; display: block; height: 36px }
+#com_tools ul li.top { border-bottom: #ace5f9 1px solid }
+#com_tools ul li.bot { border-bottom-style: none }
+#com_tools ul.webZx { padding-bottom: 0px; padding-left: 0px; width: 164px; padding-right: 0px; background: url(../images/global/webZx_bg.jpg) no-repeat; height: 65px; padding-top: 0px }
+#com_tools ul li.webZx-in { border-bottom-style: none; padding-left: 5px; height: 50px; padding-top: 8px }
+
 
 /* 公用底部区域
 -------------------------------------- */

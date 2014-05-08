@@ -66,10 +66,10 @@
                 <dd>
                   <input id="captcha" class="text" type="text" name="captcha" autocomplete="off">
                 </dd>
-                <dd class="get_captcha"><input type="button" value="获取验证码" title="获取验证码"></dd>
+                <dd class="get_captcha"><input id="captcha_btn" type="button" value="获取验证码"></dd>
               </dl>
               <div class="user_reg">
-              	<input type="button" id="Submit" value="立即注册" class="register" title="立即注册">
+              	<input type="button" id="Submit" value="立即注册" class="register">
                 <input name="agree" type="checkbox" class="verm" value="1" checked="checked">
                 <span class="clause">阅读并同意<a href="#" target="_blank" title="阅读并同意">服务协议</a></span>
               </div>
@@ -81,6 +81,35 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+var wait = 60;
+var waitFlag = false;
+document.getElementById("captcha_btn").disabled = false;
+function time(o) {
+  if (wait == 0) {
+    o.removeAttribute("disabled");
+    o.value = "获取验证码";
+    wait = 60;
+    waitFlag = false;
+  } else {
+    o.setAttribute("disabled", true);
+    o.value = "重新发送(" + wait + ")";
+    wait--;
+    setTimeout(function() {
+      time(o);
+    }, 1000);
+  }
+}
+
+document.getElementById("captcha_btn").onclick = function() {
+  if (wait != 0 && waitFlag) {
+    return;
+  }
+  time(this);
+  waitFlag = true;
+};
+</script> 
 
 <div id="footer">
   <div class="ft_bottom w1000 tc">
