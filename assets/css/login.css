@@ -45,8 +45,11 @@
 .register_page .reg_form .captcha { _margin-top: -10px; }
 .register_page .reg_form .captcha dd, .register_page .reg_form .captcha dd .text { width: 50px; }
 .register_page .reg_form .captcha .get_captcha { width: 98px; height: 32px; padding: 0 0 0 6px; margin-top: -1px; float: left; background-color: transparent; border: 0; }
+.register_page .reg_form .captcha .get_captcha p{}
 .register_page .reg_form .captcha .get_captcha input, .register_page .user_reg .register { width: 98px; height: 32px; color: #fff; font-size: 14px; font-weight: bold; background: url(../images/login/submit_bg.png) no-repeat 0 -104px; cursor: pointer; border: 0; }
-.register_page .reg_form .captcha .get_captcha input:active, .register_page .user_reg .register:active { background: url(../images/login/submit_bg.png) no-repeat 0 -138px; }
+.register_page .reg_form .captcha .get_captcha input:active { background: url(../images/login/submit_bg.png) no-repeat 0 -138px; }
 .register_page .user_reg { padding-left: 90px; }
+.register_page .user_reg .register { background: url(../images/login/submit_bg.png) no-repeat 0 -172px; }
+.register_page .user_reg .register:active { background: url(../images/login/submit_bg.png) no-repeat 0 -206px; }
 .register_page .user_reg .verm, .register_page .user_reg .clause { *position: relative; *top:-9px; }
 .register_page .user_reg .clause a { color: #c53801; }

@@ -83,5 +83,15 @@ $(function(){
         $("#lessProp").hide();
         $("#moreProp").show();
     });
+	
+	//items
+	$(".goods-content").slide({ titCell:".goods-pic-scroll-show li", mainCell:".goods-pic dl",trigger:"mouseover",triggerTime:0,delayTime:0,switchLoad:"_src" });
+	$("#listitem .item").hover(function (){
+		$(this).find(".goods-info").stop().animate({top:180},"normal");
+	},function(){
+		$(this).find(".goods-info").stop().animate({top:230},"normal");
+	});
+	
+		
     
 });

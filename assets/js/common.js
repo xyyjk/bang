@@ -101,9 +101,51 @@ $(function(){
   });
   
   /* 返回顶部 */
+  stickyGotop = function() {
+    if ($(window).scrollTop() > 80) {
+      $("#go_top").show();
+    } else {
+      $("#go_top").hide();
+    }
+  };
+  $(window).scroll(function() {
+    stickyGotop();
+  });
+  
   $("#go_top .g_7").click(function(){
     $('body,html').animate({scrollTop:0},300);
     return false;
+  });
+  
+  $("#go_top li.m").hover(function() {
+    $(this).find('em').attr("class","none");
+    $(this).find('span').attr("class","show");
+  }, function() {
+    $(this).find('em').attr("class","show");
+    $(this).find('span').attr("class","none");
+  });
+  
+  
+  //左侧沟通工具
+  $("#com_tools .btnOpen").click(function() {
+    $(".floatR").animate({
+      width:"show",
+      opacity:"show"
+    }, 150, function() {
+      $(".floatR").show();
+    });
+    $(".btnOpen").attr("style", "display:none");
+    $(".btnCtn").attr("style", "display:block");
+  });
+  $(".btnCtn").click(function() {
+    $(".floatR").animate({
+      width:"hide",
+      opacity:"hide"
+    }, 150, function() {
+      $(".floatR").hide();
+    });
+    $(".btnOpen").attr("style", "display:block");
+    $(".btnCtn").attr("style", "display:none");
   });
 
 });
