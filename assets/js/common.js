@@ -47,6 +47,12 @@ $(function(){
     $(this).removeClass("hover");
   });
   
+  
+  //搜索tab
+  $('.search_tab li').bind('click', function(){
+    $(this).addClass('selected').siblings().removeClass('selected');
+  });
+
   //首页左侧分类菜单
   $(".category ul.menu").find("li").each(
     function() {
@@ -102,7 +108,7 @@ $(function(){
   
   /* 返回顶部 */
   stickyGotop = function() {
-    if ($(window).scrollTop() > 80) {
+    if ($(window).scrollTop() > $(window).height()/2) {
       $("#go_top").show();
     } else {
       $("#go_top").hide();
