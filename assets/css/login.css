@@ -9,7 +9,7 @@
 .login_page .events .title { font-size: 40px; line-height: 44px; font-weight: bold; color: #c7000a; }
 .login_page .events .more { float: right; margin-top: 20px; }
 .login_page .events a { color: #c7000a; }
-.login_page .main_inner .pull_right { position: absolute; top: 80px; right: 120px; }
+.login_page .main_inner .pull_right { position: absolute; top: 60px; right: 120px; }
 .login_page .login_form { width: 324px; }
 .login_page .login_form dl { height: 34px; margin-bottom: 10px; }
 .login_page .login_form dt { width: 80px; float: left; line-height: 34px; font-size: 14px; color: #333; text-align: right; }
@@ -17,7 +17,10 @@
 .login_page .login_form .user_name dd { background: #fff url(../images/login/login_ico.gif) no-repeat right 0; }
 .login_page .login_form .password dd { background: #fff url(../images/login/login_ico.gif) no-repeat right -32px; }
 .login_page .login_form dd .text { width: 200px; height: 16px; line-height: 16px; padding: 0; margin: 0; border: 0; }
-.login_page .login_form .submit { width: 244px; height: 34px; float: right; padding: 0; margin-top: 10px; text-indent: -999em; background: url(../images/login/submit_bg.png) no-repeat 0 0; cursor: pointer; border: 0; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; }
+.login_page .login_form .captcha dd, .login_page .login_form .captcha dd .text { width: 50px; background: #fff; }
+.login_page .login_form .captcha .get_captcha { width: 170px; height: 26px; padding: 4px 0 4px 6px; float: left; background-color: transparent; border: 0; }
+.login_page .login_form .captcha .get_captcha a { display: block; margin-top: -22px; padding-left: 100px; }
+.login_page .login_form .submit { width: 244px; height: 34px; float: right; padding: 0; text-indent: -999em; background: url(../images/login/submit_bg.png) no-repeat 0 0; cursor: pointer; border: 0; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; }
 .login_page .login_form .submit:hover { background: url(../images/login/submit_bg.png) no-repeat 0 -34px; }
 .login_page .login_form .submit:active { background: url(../images/login/submit_bg.png) no-repeat 0 -68px; }
 .login_page .forget_pwd { clear: both; padding-top: 10px; *padding-top: 0px; text-align: right; }
@@ -45,7 +48,6 @@
 .register_page .reg_form .captcha { _margin-top: -10px; }
 .register_page .reg_form .captcha dd, .register_page .reg_form .captcha dd .text { width: 50px; }
 .register_page .reg_form .captcha .get_captcha { width: 98px; height: 32px; padding: 0 0 0 6px; margin-top: -1px; float: left; background-color: transparent; border: 0; }
-.register_page .reg_form .captcha .get_captcha p{}
 .register_page .reg_form .captcha .get_captcha input, .register_page .user_reg .register { width: 98px; height: 32px; color: #fff; font-size: 14px; font-weight: bold; background: url(../images/login/submit_bg.png) no-repeat 0 -104px; cursor: pointer; border: 0; }
 .register_page .reg_form .captcha .get_captcha input:active { background: url(../images/login/submit_bg.png) no-repeat 0 -138px; }
 .register_page .user_reg { padding-left: 90px; }
